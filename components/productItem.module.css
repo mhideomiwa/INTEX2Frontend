@@ -1,0 +1,11 @@
+.productItemImage {
+  width: 25em;
+  height: 25em;
+  object-fit: cover;
+}
+.productTitle {
+  max-width: 25em; /* Adjust the max-width as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

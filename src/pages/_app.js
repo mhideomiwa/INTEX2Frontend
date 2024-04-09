@@ -1,5 +1,22 @@
-import "@/styles/globals.css";
+import React from 'react';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import {default as Layout} from './layout';
+// import {StateContext} from '../context/StateContext'
+import {Toaster} from 'react-hot-toast'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
+function App({ Component, pageProps }) {
+  return (
+      // <StateContext>
+
+        <Layout>
+          <Toaster />
+          <Component {...pageProps} />
+        </Layout>
+      // </StateContext>
+  )
 }
+
+export default App
