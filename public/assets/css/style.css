@@ -320,6 +320,12 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+.translate-left-25{
+  -webkit-transform: translate(-25%, 0);
+  -moz-transform: translate(-25%, 0);
+  transform: translate(-25%, 0);
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
@@ -13448,5 +13454,7 @@ div.code-toolbar > .toolbar {
 
 .status.verified::after {
   background: #28a745; }
+
+
 
 /*# sourceMappingURL=style.css.map */

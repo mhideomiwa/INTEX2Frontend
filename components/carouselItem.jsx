@@ -7,11 +7,11 @@ function CarouselItem({item}) {
         <div>
             <div className="card card-product">
                 <figure className="card-image">
-                    <Link href="">
+                    <Link href={`/product/${item.slug}`}>
                         <img src={item.img_link} alt="Image" className={styles.carouselImage} />
                     </Link>
                 </figure>
-                <Link href="" className="card-body">
+                <Link href={`/product/${item.slug}`} className="card-body">
                     <h3 className="card-title">{item.name}</h3>
                     <span className="price">${item.price}</span>
                 </Link>

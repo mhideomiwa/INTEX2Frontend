@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 
+
 const Navbar = () => {
 
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="documentation.html">
+                                <a className="nav-link" href="/aboutus">
                                     About Us
                                 </a>
                             </li>

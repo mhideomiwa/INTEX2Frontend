@@ -3,9 +3,9 @@ import { ProductItem } from '../../components';
 import dummyData from "../../dummydata/dummydata.json";
 
 const Products = ({ products }) => {
-    // State to manage the current page
+    // State to manage the current page and items per page
     const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 9;
+    const [productsPerPage, setProductsPerPage] = useState(5);
 
     // Calculate total number of pages
     const totalPages = Math.ceil(products.length / productsPerPage);
@@ -17,6 +17,13 @@ const Products = ({ products }) => {
 
     // Function to handle page navigation
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    // Function to handle change in items per page
+    const handleItemsPerPageChange = (e) => {
+        const newItemsPerPage = parseInt(e.target.value);
+        setProductsPerPage(newItemsPerPage);
+        setCurrentPage(1); // Reset to first page when changing items per page
+    };
 
     return (
         <div>
@@ -32,7 +39,19 @@ const Products = ({ products }) => {
                         <div className="col-md-6 text-md-right">
                             <ul className="list list--horizontal list--separated text-muted fs-14">
                                 <li>
-                                    <span className="text-primary">{products.length} items</span>
+                                    <span>
+                                        <form>
+                                            Items per page:
+                                            <select name="itemsPerPage" id="itemsPerPage" onChange={handleItemsPerPageChange} value={productsPerPage} className="select-frame">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                            </select>
+                                        </form>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="text-primary">/{products.length} items</span>
                                 </li>
                             </ul>
                         </div>

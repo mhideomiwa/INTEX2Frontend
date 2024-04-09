@@ -12,7 +12,7 @@ function Footer(props) {
                         <div className="col-md-4 text-md-right text-muted">
                             <ul className="list list--horizontal list--separated">
                                 <li>
-                                    <a className="small underline" href="">Privacy Policy</a>
+                                    <a className="small underline" href="/privacy">Privacy Policy</a>
                                 </li>
                             </ul>
                         </div>
