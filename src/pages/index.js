@@ -21,7 +21,7 @@ const Home = ({topProducts, recProducts}) => {
                                     <div className="col-lg-8 text-white" data-swiper-parallax-x="-100%">
                                         <span className="eyebrow">New Additions</span>
                                         <h1>What's your next set?</h1>
-                                        <Link href="" className="btn btn-outline-white">Shop Now</Link>
+                                        <Link href="/products" className="btn btn-outline-white">Shop Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@ const Home = ({topProducts, recProducts}) => {
             </div>
 
             {/*Carousel*/}
-            <section className="no-overflow py-1">
+            <section className="no-overflow py-5">
                 <div className="container">
                     <div className="row align-items-center gutter-1">
                         <div className="col-lg-3">
@@ -58,6 +58,26 @@ const Home = ({topProducts, recProducts}) => {
                     </div>
                 </div>
             </section>
+
+            {/*Swiper Banner*/}
+            <div className="swiper-container">
+                <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                        <div className="swiper-slide">
+                            <div className="image image--overlay" style={{backgroundImage: "url(assets/images/legocommunity.jpg)"}}></div>
+                            <div className="container">
+                                <div className="row align-items-end vh-100">
+                                    <div className="col-lg-8 text-white" data-swiper-parallax-x="-100%">
+                                        <h1>Learn About Our Community of Builders</h1>
+                                        <Link href="/aboutus" className="btn btn-outline-white">About Us</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             {/*Blocks*/}
             <section>
