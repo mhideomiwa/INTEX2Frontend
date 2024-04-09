@@ -1,0 +1,3175 @@
+.footer.footer {
+    position: absolute;
+    left: -160px;
+    top: 4140px;
+}
+
+.root {
+    position: relative;
+    width: 1512px;
+    height: 982px;
+    align-items: flex-start;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.home {
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: absolute;
+    left: 909px;
+    top: 75px;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.rectangle1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1512px;
+    height: 111px;
+    background-color: #f5f5f5;
+}
+.auroraBricks {
+    color: #3899cb;
+    font-size: 48px;
+    line-height: 36px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: absolute;
+    left: 599px;
+    top: 40px;
+    width: 315px;
+    height: 52px;
+    flex-direction: column;
+}
+
+.home2 {
+    color: #000;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: absolute;
+    left: 53px;
+    top: 39px;
+    width: 75px;
+    height: 45px;
+    flex-direction: column;
+}
+.products {
+    color: #000;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: absolute;
+    left: 152px;
+    top: 39px;
+    width: 107px;
+    height: 45px;
+    flex-direction: column;
+}
+.aboutUs {
+    color: #000;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    position: absolute;
+    left: 283px;
+    top: 39px;
+    width: 113px;
+    height: 45px;
+    flex-direction: column;
+}
+.frame31 {
+    position: absolute;
+    left: 161px;
+    top: 184px;
+    width: 1191px;
+    height: 4212px;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+.privacyPolicyLastUpdatedApril8 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1114px;
+    height: 4146px;
+    flex-direction: column;
+}
+.textBlock {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock2 {
+    margin-top: 0;
+}
+.labelWrapper {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock3 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock4 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock5 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock6 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock7 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock8 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock9 {
+    margin-top: 0;
+}
+.labelWrapper2 {
+    font-size: 32px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock10 {
+    margin-top: 0;
+}
+.labelWrapper3 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock11 {
+    margin-top: 0;
+}
+.labelWrapper4 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock12 {
+    margin-top: 0;
+}
+.labelWrapper5 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock13 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock14 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock15 {
+    margin-top: 0;
+}
+.labelWrapper6 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock16 {
+    margin-top: 0;
+}
+.labelWrapper7 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list {
+    font-size: 12px;
+}
+.list ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock17 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list2 {
+    font-size: 12px;
+}
+.list2 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock18 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list3 {
+    font-size: 12px;
+}
+.list3 ::marker {
+    color: #000;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock19 {
+    margin-top: 0;
+}
+.labelWrapper8 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label4 {
+    color: #000;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label5 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock20 {
+    margin-top: 0;
+}
+.labelWrapper9 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list4 {
+    font-size: 12px;
+}
+.list4 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock21 {
+    margin-top: 0;
+}
+.labelWrapper10 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label6 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label7 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock22 {
+    margin-top: 0;
+}
+.labelWrapper11 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list5 {
+    font-size: 12px;
+}
+.list5 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock23 {
+    margin-top: 0;
+}
+.labelWrapper12 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label8 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label9 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock24 {
+    margin-top: 0;
+}
+.labelWrapper13 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list6 {
+    font-size: 12px;
+}
+.list6 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock25 {
+    margin-top: 0;
+}
+.labelWrapper14 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label10 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label11 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock26 {
+    margin-top: 0;
+}
+.labelWrapper15 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list7 {
+    font-size: 12px;
+}
+.list7 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock27 {
+    margin-top: 0;
+}
+.labelWrapper16 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label12 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label13 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock28 {
+    margin-top: 0;
+}
+.labelWrapper17 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list8 {
+    font-size: 12px;
+}
+.list8 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock29 {
+    margin-top: 0;
+}
+.labelWrapper18 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label14 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label15 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock30 {
+    margin-top: 0;
+}
+.labelWrapper19 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list9 {
+    font-size: 12px;
+}
+.list9 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock31 {
+    margin-top: 0;
+}
+.labelWrapper20 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label16 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label17 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock32 {
+    margin-top: 0;
+}
+.labelWrapper21 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list10 {
+    font-size: 12px;
+}
+.list10 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock33 {
+    margin-top: 0;
+}
+.labelWrapper22 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label18 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label19 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock34 {
+    margin-top: 0;
+}
+.labelWrapper23 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list11 {
+    font-size: 12px;
+}
+.list11 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock35 {
+    margin-top: 0;
+}
+.labelWrapper24 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label20 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label21 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock36 {
+    margin-top: 0;
+}
+.labelWrapper25 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list12 {
+    font-size: 12px;
+}
+.list12 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock37 {
+    margin-top: 0;
+}
+.labelWrapper26 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label22 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label23 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock38 {
+    margin-top: 0;
+}
+.labelWrapper27 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list13 {
+    font-size: 12px;
+}
+.list13 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock39 {
+    margin-top: 0;
+}
+.labelWrapper28 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label24 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label25 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label26 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    text-decoration: underline;
+}
+.textBlock40 {
+    margin-top: 0;
+}
+.labelWrapper29 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list14 {
+    font-size: 12px;
+}
+.list14 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock41 {
+    margin-top: 0;
+}
+.labelWrapper30 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label27 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label28 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock42 {
+    margin-top: 0;
+}
+.labelWrapper31 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock43 {
+    margin-top: 0;
+}
+.labelWrapper32 {
+    font-size: 32px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label29 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock44 {
+    margin-top: 0;
+}
+.labelWrapper33 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock45 {
+    margin-top: 0;
+}
+.labelWrapper34 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label30 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock46 {
+    margin-top: 0;
+}
+.labelWrapper35 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock47 {
+    margin-top: 0;
+}
+.labelWrapper36 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label31 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock48 {
+    margin-top: 0;
+}
+.labelWrapper37 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list15 {
+    font-size: 12px;
+}
+.list15 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock49 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list16 {
+    font-size: 12px;
+}
+.list16 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock50 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list17 {
+    font-size: 12px;
+}
+.list17 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock51 {
+    margin-top: 0;
+}
+.labelWrapper38 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label32 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock52 {
+    margin-top: 0;
+}
+.labelWrapper39 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list18 {
+    font-size: 12px;
+}
+.list18 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock53 {
+    margin-top: 0;
+}
+.labelWrapper40 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label33 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock54 {
+    margin-top: 0;
+}
+.labelWrapper41 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list19 {
+    font-size: 12px;
+}
+.list19 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock55 {
+    margin-top: 0;
+}
+.labelWrapper42 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label34 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock56 {
+    margin-top: 0;
+}
+.labelWrapper43 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list20 {
+    font-size: 12px;
+}
+.list20 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock57 {
+    margin-top: 0;
+}
+.labelWrapper44 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label35 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock58 {
+    margin-top: 0;
+}
+.labelWrapper45 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list21 {
+    font-size: 12px;
+}
+.list21 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock59 {
+    margin-top: 0;
+}
+.labelWrapper46 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label36 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock60 {
+    margin-top: 0;
+}
+.labelWrapper47 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock61 {
+    margin-top: 0;
+}
+.labelWrapper48 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label37 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock62 {
+    margin-top: 0;
+}
+.labelWrapper49 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock63 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock64 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock65 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock66 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock67 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock68 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock69 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock70 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock71 {
+    margin-top: 0;
+}
+.labelWrapper50 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label38 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock72 {
+    margin-top: 0;
+}
+.labelWrapper51 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list22 {
+    font-size: 12px;
+}
+.list22 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock73 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list23 {
+    font-size: 12px;
+}
+.list23 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock74 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list24 {
+    font-size: 12px;
+}
+.list24 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock75 {
+    margin-top: 0;
+}
+.labelWrapper52 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label39 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock76 {
+    margin-top: 0;
+}
+.labelWrapper53 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list25 {
+    font-size: 12px;
+}
+.list25 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock77 {
+    margin-top: 0;
+}
+.labelWrapper54 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label40 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock78 {
+    margin-top: 0;
+}
+.labelWrapper55 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock79 {
+    margin-top: 0;
+}
+.labelWrapper56 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label41 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label42 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    text-decoration: underline;
+}
+.label43 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list26 {
+    font-size: 12px;
+}
+.list26 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock80 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list27 {
+    font-size: 12px;
+}
+.list27 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock81 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list28 {
+    font-size: 12px;
+}
+.list28 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock82 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list29 {
+    font-size: 12px;
+}
+.list29 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock83 {
+    margin-top: 0;
+}
+.labelWrapper57 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label44 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock84 {
+    margin-top: 0;
+}
+.labelWrapper58 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list30 {
+    font-size: 12px;
+}
+.list30 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock85 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list31 {
+    font-size: 12px;
+}
+.list31 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock86 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list32 {
+    font-size: 12px;
+}
+.list32 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock87 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list33 {
+    font-size: 12px;
+}
+.list33 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock88 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list34 {
+    font-size: 12px;
+}
+.list34 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock89 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list35 {
+    font-size: 12px;
+}
+.list35 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock90 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list36 {
+    font-size: 12px;
+}
+.list36 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock91 {
+    margin-top: 0;
+}
+.labelWrapper59 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label45 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock92 {
+    margin-top: 0;
+}
+.labelWrapper60 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock93 {
+    margin-top: 0;
+}
+.labelWrapper61 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label46 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list37 {
+    font-size: 12px;
+}
+.list37 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock94 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list38 {
+    font-size: 12px;
+}
+.list38 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock95 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list39 {
+    font-size: 12px;
+}
+.list39 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock96 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list40 {
+    font-size: 12px;
+}
+.list40 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock97 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list41 {
+    font-size: 12px;
+}
+.list41 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock98 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list42 {
+    font-size: 12px;
+}
+.list42 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock99 {
+    margin-top: 0;
+}
+.labelWrapper62 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label47 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock100 {
+    margin-top: 0;
+}
+.labelWrapper63 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock101 {
+    margin-top: 0;
+}
+.labelWrapper64 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label48 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock102 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock103 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock104 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock105 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock106 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock107 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock108 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock109 {
+    margin-top: 0;
+}
+.labelWrapper65 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label49 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock110 {
+    margin-top: 0;
+}
+.labelWrapper66 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list43 {
+    font-size: 12px;
+}
+.list43 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock111 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list44 {
+    font-size: 12px;
+}
+.list44 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock112 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list45 {
+    font-size: 12px;
+}
+.list45 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock113 {
+    margin-top: 0;
+}
+.labelWrapper67 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label50 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label51 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock114 {
+    margin-top: 0;
+}
+.labelWrapper68 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list46 {
+    font-size: 12px;
+}
+.list46 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock115 {
+    margin-top: 0;
+}
+.labelWrapper69 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label52 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label53 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock116 {
+    margin-top: 0;
+}
+.labelWrapper70 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list47 {
+    font-size: 12px;
+}
+.list47 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock117 {
+    margin-top: 0;
+}
+.labelWrapper71 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label54 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label55 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock118 {
+    margin-top: 0;
+}
+.labelWrapper72 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list48 {
+    font-size: 12px;
+}
+.list48 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock119 {
+    margin-top: 0;
+}
+.labelWrapper73 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label56 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label57 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock120 {
+    margin-top: 0;
+}
+.labelWrapper74 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list49 {
+    font-size: 12px;
+}
+.list49 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock121 {
+    margin-top: 0;
+}
+.labelWrapper75 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label58 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label59 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock122 {
+    margin-top: 0;
+}
+.labelWrapper76 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list50 {
+    font-size: 12px;
+}
+.list50 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock123 {
+    margin-top: 0;
+}
+.labelWrapper77 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label60 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label61 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock124 {
+    margin-top: 0;
+}
+.labelWrapper78 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list51 {
+    font-size: 12px;
+}
+.list51 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock125 {
+    margin-top: 0;
+}
+.labelWrapper79 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label62 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label63 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock126 {
+    margin-top: 0;
+}
+.labelWrapper80 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list52 {
+    font-size: 12px;
+}
+.list52 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock127 {
+    margin-top: 0;
+}
+.labelWrapper81 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label64 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label65 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock128 {
+    margin-top: 0;
+}
+.labelWrapper82 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list53 {
+    font-size: 12px;
+}
+.list53 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock129 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list54 {
+    font-size: 12px;
+}
+.list54 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock130 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list55 {
+    font-size: 12px;
+}
+.list55 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock131 {
+    margin-top: 0;
+}
+.labelWrapper83 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label66 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label67 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock132 {
+    margin-top: 0;
+}
+.labelWrapper84 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list56 {
+    font-size: 12px;
+}
+.list56 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock133 {
+    margin-top: 0;
+}
+.labelWrapper85 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label68 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label69 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock134 {
+    margin-top: 0;
+}
+.labelWrapper86 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list57 {
+    font-size: 12px;
+}
+.list57 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock135 {
+    margin-top: 0;
+}
+.labelWrapper87 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label70 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label71 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock136 {
+    margin-top: 0;
+}
+.labelWrapper88 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list58 {
+    font-size: 12px;
+}
+.list58 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock137 {
+    margin-top: 0;
+}
+.labelWrapper89 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label72 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label73 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock138 {
+    margin-top: 0;
+}
+.labelWrapper90 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list59 {
+    font-size: 12px;
+}
+.list59 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock139 {
+    margin-top: 0;
+}
+.labelWrapper91 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label74 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label75 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock140 {
+    margin-top: 0;
+}
+.labelWrapper92 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list60 {
+    font-size: 12px;
+}
+.list60 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock141 {
+    margin-top: 0;
+}
+.labelWrapper93 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label76 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label77 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock142 {
+    margin-top: 0;
+}
+.labelWrapper94 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock143 {
+    margin-top: 0;
+}
+.labelWrapper95 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label78 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock144 {
+    margin-top: 0;
+}
+.labelWrapper96 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock145 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock146 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock147 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock148 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock149 {
+    margin-top: 0;
+}
+.labelWrapper97 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label79 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock150 {
+    margin-top: 0;
+}
+.labelWrapper98 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock151 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock152 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock153 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock154 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock155 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock156 {
+    margin-top: 0;
+}
+.labelWrapper99 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label80 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock157 {
+    margin-top: 0;
+}
+.labelWrapper100 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock158 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock159 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock160 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock161 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock162 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock163 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock164 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock165 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock166 {
+    margin-top: 0;
+}
+.labelWrapper101 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label81 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock167 {
+    margin-top: 0;
+}
+.labelWrapper102 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock168 {
+    margin-top: 0;
+}
+.labelWrapper103 {
+    font-size: 16px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label82 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock169 {
+    margin-top: 0;
+}
+.labelWrapper104 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock170 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock171 {
+    margin-top: 0;
+}
+.labelWrapper105 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock172 {
+    margin-top: 0;
+}
+.labelWrapper106 {
+    font-size: 16px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label83 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock173 {
+    margin-top: 0;
+}
+.labelWrapper107 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock174 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock175 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock176 {
+    margin-top: 0;
+}
+.labelWrapper108 {
+    font-size: 16px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label84 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock177 {
+    margin-top: 0;
+}
+.labelWrapper109 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list61 {
+    font-size: 12px;
+}
+.list61 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock178 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list62 {
+    font-size: 12px;
+}
+.list62 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock179 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list63 {
+    font-size: 12px;
+}
+.list63 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock180 {
+    margin-top: 0;
+}
+.labelWrapper110 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label85 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock181 {
+    margin-top: 0;
+}
+.labelWrapper111 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list64 {
+    font-size: 12px;
+}
+.list64 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock182 {
+    margin-top: 0;
+}
+.labelWrapper112 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label86 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock183 {
+    margin-top: 0;
+}
+.labelWrapper113 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list65 {
+    font-size: 12px;
+}
+.list65 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock184 {
+    margin-top: 0;
+}
+.labelWrapper114 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label87 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock185 {
+    margin-top: 0;
+}
+.labelWrapper115 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list66 {
+    font-size: 12px;
+}
+.list66 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock186 {
+    margin-top: 0;
+}
+.labelWrapper116 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label88 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock187 {
+    margin-top: 0;
+}
+.labelWrapper117 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list67 {
+    font-size: 12px;
+}
+.list67 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock188 {
+    margin-top: 0;
+}
+.labelWrapper118 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label89 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock189 {
+    margin-top: 0;
+}
+.labelWrapper119 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock190 {
+    margin-top: 0;
+}
+.labelWrapper120 {
+    font-size: 18px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label90 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock191 {
+    margin-top: 0;
+}
+.labelWrapper121 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock192 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock193 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock194 {
+    margin-top: 0;
+}
+.labelWrapper122 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label91 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock195 {
+    margin-top: 0;
+}
+.labelWrapper123 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock196 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock197 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock198 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock199 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock200 {
+    margin-top: 0;
+}
+.labelWrapper124 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label92 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock201 {
+    margin-top: 0;
+}
+.labelWrapper125 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock202 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock203 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock204 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock205 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock206 {
+    margin-top: 0;
+}
+.labelWrapper126 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label93 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock207 {
+    margin-top: 0;
+}
+.labelWrapper127 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.textBlock208 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock209 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock210 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock211 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock212 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock213 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock214 {
+    margin-top: 0;
+}
+.labelWrapper128 {
+    font-size: 24px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label94 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock215 {
+    margin-top: 0;
+}
+.labelWrapper129 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.list68 {
+    font-size: 12px;
+}
+.list68 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock216 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list69 {
+    font-size: 12px;
+}
+.list69 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock217 {
+    margin-top: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.list70 {
+    font-size: 12px;
+}
+.list70 ::marker {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock218 {
+    margin-top: 0;
+}
+.labelWrapper130 {
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    flex-shrink: 1;
+}
+.label95 {
+    color: #000;
+    font-size: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
