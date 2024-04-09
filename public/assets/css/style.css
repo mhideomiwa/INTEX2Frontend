@@ -10244,7 +10244,15 @@ hr {
   margin-bottom: 5px; }
 
 dt {
-  font-weight: 400; }
+  font-weight: 400;
+}
+
+.box-ul {
+  list-style-type: square; !important;
+  margin-left: 2.5em;
+  padding-left: 0;
+  padding-bottom: .7em;
+}
 
 .underline, .breadcrumb-item a, .list-group-minimal .list-group-item span a {
   -webkit-transition: all 0.2s;
