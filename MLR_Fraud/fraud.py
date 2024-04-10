@@ -21,12 +21,12 @@ df = pd.merge(df_orders, df_items, on='transaction_ID', how='inner')
 
 #Since 18 missing addresses doesnt amount to much, we will just drop them
 df.dropna(subset=['shipping_address'], inplace=True)
+df = df.drop(['transaction_ID', 'customer_ID', 'rating'], axis=1)
 
 #Fix the date column because this format is not useful 
 #Convert to datetime 
 df['date'] = pd.to_datetime(df['date'])
 
-df['year'] = df['date'].dt.year
 df['month'] = df['date'].dt.month
 
 df = df.drop('date', axis=1)
@@ -45,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_
 
 #Train/fit the model
 #Create Decision Tree object
-clf = DecisionTreeClassifier()
+clf = ExtraTreesClassifier(n_estimators=100, random_state=1).fit(X_train, y_train).score(X_test, y_test)
 
 #Train the Decision Tree
 clf = clf.fit(X_train, y_train)
