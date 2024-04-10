@@ -4,10 +4,10 @@ import Link from 'next/link';
 function BlockItem({item}) {
     return (
         <div className="col-6 col-lg-3">
-            <Link href={`/product/${item.slug}`}>
+            <Link href={`/product/${item.slug}?id=${item.productId}`}>
                 <figure className="category category--alt">
                     <div className="equal">
-                        <span className="image" style={{backgroundImage: `url(${item.img_link})`}}></span>
+                        <span className="image" style={{backgroundImage: `url(${item.imgLink})`}}></span>
                     </div>
                     <figcaption>{item.name}</figcaption>
                 </figure>
