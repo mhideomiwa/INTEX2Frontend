@@ -1,122 +1,175 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import dummyData from "../../dummydata/dummydata.json";
-import Link from 'next/link';
+// import dummyData from "../../dummydata/dummydata.json";
+import Link from "next/link";
 import { CarouselItem, BlockItem } from "../../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Home = ({topProducts, recProducts}) => {
-    return (
-        <div>
-            {/*Swiper Banner*/}
-            <div className="swiper-container">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                        <div className="swiper-slide">
-                            <div className="image image--overlay" style={{backgroundImage: "url(assets/images/homeBg.jpg)"}}></div>
-                            <div className="container">
-                                <div className="row align-items-end vh-100">
-                                    <div className="col-lg-8 text-white" data-swiper-parallax-x="-100%">
-                                        <span className="eyebrow">New Additions</span>
-                                        <h1>What's your next set?</h1>
-                                        <Link href="/products" className="btn btn-outline-white">Shop Now</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+const Home = ({ topProducts, recProducts }) => {
+  return (
+    <div>
+      {/*Swiper Banner*/}
+      <div className="swiper-container">
+        <div className="swiper-wrapper">
+          <div className="swiper-slide">
+            <div className="swiper-slide">
+              <div
+                className="image image--overlay"
+                style={{ backgroundImage: "url(assets/images/homeBg.jpg)" }}
+              ></div>
+              <div className="container">
+                <div className="row align-items-end vh-100">
+                  <div
+                    className="col-lg-8 text-white"
+                    data-swiper-parallax-x="-100%"
+                  >
+                    <span className="eyebrow">New Additions</span>
+                    <h1>What's your next set?</h1>
+                    <Link href="/products" className="btn btn-outline-white">
+                      Shop Now
+                    </Link>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            {/*Carousel*/}
-            <section className="no-overflow py-5">
-                <div className="container">
-                    <div className="row align-items-center gutter-1">
-                        <div className="col-lg-3">
-                            <div className="pr-lg-5">
-                                <div className="level-1">
-                                    <span className="eyebrow text-muted">Hot Products</span>
-                                    <h2>Top Sellers</h2>
-                                    <div className="nav nav-tabs flex-lg-column mt-md-3 lavalamp">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-9">
-                            <div className="row gutter-2 filtr-container">
-                                {/* Render each product using the CarouselItem component */}
-                                {topProducts.map((product) => (
-                                    <div className="col-md-6 col-lg-4 filtr-item" key={product.product_ID}>
-                                        <CarouselItem item={product} />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/*Swiper Banner*/}
-            <div className="swiper-container">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                        <div className="swiper-slide">
-                            <div className="image image--overlay" style={{backgroundImage: "url(assets/images/legocommunity.jpg)"}}></div>
-                            <div className="container">
-                                <div className="row align-items-end vh-100">
-                                    <div className="col-lg-8 text-white" data-swiper-parallax-x="-100%">
-                                        <h1>Learn About Our Community of Builders</h1>
-                                        <Link href="/aboutus" className="btn btn-outline-white">About Us</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            {/*Blocks*/}
-            <section>
-                <div class="container">
-                    <div class="row align-items-end">
-                        <div class="col-8 col-md-6">
-                            <span class="eyebrow text-muted">Shop by category</span>
-                            <h2>Trending Categories</h2>
-                        </div>
-                        <div class="col-4 col-md-6 text-right">
-                            <a href="" class="underlined">View More</a>
-                        </div>
-                    </div>
-                    <div class="row gutter-1">
-                        {/* Render each product using the blockItem component */}
-                        {recProducts.map((product) => (
-                            <BlockItem item={product} key={product.product_ID} />
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-
+          </div>
         </div>
-    );
-}
+      </div>
 
+      {/*Carousel*/}
+      <section className="no-overflow py-5">
+        <div className="container">
+          <div className="row align-items-center gutter-1">
+            <div className="col-lg-3">
+              <div className="pr-lg-5">
+                <div className="level-1">
+                  <span className="eyebrow text-muted">Hot Products</span>
+                  <h2>Top Sellers</h2>
+                  <div className="nav nav-tabs flex-lg-column mt-md-3 lavalamp"></div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-9">
+              <div className="row gutter-2 filtr-container">
+                {/* Render each product using the CarouselItem component */}
+                {topProducts.map((product) => (
+                  <div
+                    className="col-md-6 col-lg-4 filtr-item"
+                    key={product.product_ID}
+                  >
+                    <CarouselItem item={product} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Swiper Banner*/}
+      <div className="swiper-container">
+        <div className="swiper-wrapper">
+          <div className="swiper-slide">
+            <div className="swiper-slide">
+              <div
+                className="image image--overlay"
+                style={{
+                  backgroundImage: "url(assets/images/legocommunity.jpg)",
+                }}
+              ></div>
+              <div className="container">
+                <div className="row align-items-end vh-100">
+                  <div
+                    className="col-lg-8 text-white"
+                    data-swiper-parallax-x="-100%"
+                  >
+                    <h1>Learn About Our Community of Builders</h1>
+                    <Link href="/aboutus" className="btn btn-outline-white">
+                      About Us
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*Blocks*/}
+      <section>
+        <div className="container">
+          <div className="row align-items-end">
+            <div className="col-8 col-md-6">
+              <span className="eyebrow text-muted">Shop by category</span>
+              <h2>Trending Categories</h2>
+            </div>
+            <div className="col-4 col-md-6 text-right">
+              <a href="" className="underlined">
+                View More
+              </a>
+            </div>
+          </div>
+          <div className="row gutter-1">
+            {/* Render each product using the blockItem component */}
+            {recProducts.map((product) => (
+              <BlockItem item={product} key={product.product_ID} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+// export async function getStaticProps() {
+//     const topProducts = dummyData.slice(0, 3);
+//     const recProducts = dummyData.slice(4, 12);
+//     return {
+//         props: {
+//             topProducts,
+//             recProducts,
+//         },
+//     };
+// }
 export async function getStaticProps() {
-    const topProducts = dummyData.slice(0, 3);
-    const recProducts = dummyData.slice(4, 12);
+  try {
+    // Fetch top products
+    const topProductsResponse = await fetch(
+      "http://localhost:7102/api/Home/GetAllProducts",
+      {
+        timeout: 30000, // Increase the timeout duration (e.g., 30 seconds)
+      }
+    );
+    const topProducts = await topProductsResponse.json();
+
+    // Fetch recommended products
+    const recProductsResponse = await fetch(
+      "http://localhost:7102/api/Home/GetAllProducts",
+      {
+        timeout: 30000, // Increase the timeout duration (e.g., 30 seconds)
+      }
+    );
+    const recProducts = await recProductsResponse.json();
+
     return {
-        props: {
-            topProducts,
-            recProducts,
-        },
+      props: {
+        topProducts,
+        recProducts,
+      },
     };
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    console.error("Error details:", error.message);
+    console.error("Error stack trace:", error.stack);
+    return {
+      props: {
+        topProducts: [],
+        recProducts: [],
+      },
+    };
+  }
 }
-
-
-
 
 export default Home;
