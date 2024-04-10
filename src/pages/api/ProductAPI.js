@@ -7,7 +7,7 @@ export default async function handler(req, res) {
         // Get one product
         try {
           const response = await fetch(
-            `http://localhost:7102/api/Home/GetOneProduct?id=${req.query.id}`
+              process.env.LOCAL_API_URL + `/api/Home/GetOneProduct?id=${req.query.id}`
           );
           const product = await response.json();
           res.status(200).json(product);
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         // Search products
         try {
           const response = await fetch(
-            `http://localhost:7102/api/Home/SearchProducts?searchTerm=${req.query.searchTerm}`
+              process.env.LOCAL_API_URL + `/api/Home/SearchProducts?searchTerm=${req.query.searchTerm}`
           );
           const products = await response.json();
           res.status(200).json(products);
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
         try {
           const queryParams = new URLSearchParams(req.query).toString();
           const response = await fetch(
-            `http://localhost:7102/api/Home/${
+              process.env.LOCAL_API_URL + `/api/Home/${
               queryParams ? "FilterProducts" : "GetAllProducts"
             }?${queryParams}`, {
                 mode: 'cors'
@@ -80,7 +80,7 @@ export default async function handler(req, res) {
       // Create a product
       try {
         const response = await fetch(
-          "http://localhost:7102/api/Home/CreateProduct",
+            process.env.LOCAL_API_URL + "/api/Home/CreateProduct",
           {
             method: "POST",
             headers: {
@@ -99,7 +99,7 @@ export default async function handler(req, res) {
       // Edit a product
       try {
         const response = await fetch(
-          `http://localhost:7102/api/Home/EditProduct?id=${req.query.id}`,
+            process.env.LOCAL_API_URL + `/api/Home/EditProduct?id=${req.query.id}`,
           {
             method: "PUT",
             headers: {
@@ -117,7 +117,7 @@ export default async function handler(req, res) {
       // Delete a product
       try {
         const response = await fetch(
-          `http://localhost:7102/api/Home/DeleteProduct?id=${req.query.id}`,
+            process.env.LOCAL_API_URL + `/api/Home/DeleteProduct?id=${req.query.id}`,
           {
             method: "DELETE",
           }
