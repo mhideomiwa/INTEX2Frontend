@@ -19,4 +19,6 @@ function App({ Component, pageProps }) {
   )
 }
 
+//Create post route for fraud model 
+
 export default App
