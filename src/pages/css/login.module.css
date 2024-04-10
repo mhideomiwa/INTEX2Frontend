@@ -1,0 +1,21 @@
+.login-nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+}
+
+.login-nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjust the position of the black bar */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the black bar */
+    background-color: black; /* Adjust color as needed */
+    transform: scaleX(0); /* Initially, the bar will have no width */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.login-nav-link.active::before {
+    transform: scaleX(1); /* When the link is active, the bar will have full width */
+}

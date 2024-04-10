@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import { Navbar, Footer } from '../../components';
+import Script from "next/script";
 
 const Layout = ({ children }) => {
     return (
@@ -12,6 +13,8 @@ const Layout = ({ children }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
                 <meta charSet="utf-8" />
+                <Script src="/assets/js/vendor.min.js"></Script>
+                <Script src="/assets/js/app.js"></Script>
             </Head>
             <Navbar />
 
