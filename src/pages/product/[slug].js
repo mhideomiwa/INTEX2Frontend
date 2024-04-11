@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import {useStateContext} from "../../../context/StateContext";
 import axios from 'axios';
-require('dotenv').config();
 //TODO: Replace the localhost with the actual API URL before pushing to prod
 
 
