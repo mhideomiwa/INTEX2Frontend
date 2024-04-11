@@ -7,7 +7,7 @@ export default async function handler(req, res) {
         // Get one product
         try {
           const response = await fetch(
-            `http://localhost:7102/api/Home/GetOneProduct?id=${req.query.id}`
+              process.env.API_URI + `/api/Home/GetOneProduct?id=${req.query.id}`
           );
           const product = await response.json();
           res.status(200).json(product);
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         // Search products
         try {
           const response = await fetch(
-            `http://localhost:7102/api/Home/SearchProducts?searchTerm=${req.query.searchTerm}`
+              process.env.API_URI + `/api/Home/SearchProducts?searchTerm=${req.query.searchTerm}`
           );
           const products = await response.json();
           res.status(200).json(products);
@@ -30,22 +30,57 @@ export default async function handler(req, res) {
         try {
           const queryParams = new URLSearchParams(req.query).toString();
           const response = await fetch(
-            `http://localhost:7102/api/Home/${
+              process.env.API_URI + `/api/Home/${
               queryParams ? "FilterProducts" : "GetAllProducts"
-            }?${queryParams}`
+            }?${queryParams}`, {
+                mode: 'cors'
+              }
           );
           const products = await response.json();
-          res.status(200).json(products);
+          res.json();
         } catch (error) {
           res.status(500).json({ error: "Failed to fetch products" });
         }
       }
+
+//     export async function getServerSideProps() {
+//       process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+// // Your fetch request here
+//       try {
+//         const agent = new https.Agent({
+//           rejectUnauthorized: false, // Disable SSL verification
+//         });
+//         const response = await fetch("https://localhost:7102/api/Home/GetAllProducts", {
+//           mode: "cors",
+//         });
+//         console.log("RESPONSE:", (await response.json()));
+//         const { topProducts, recProducts } = (await response.json());
+//         return {
+//           props: {
+//             topProducts,
+//             // recProducts,
+//           },
+//         };
+//       } catch (error) {
+//         console.error("Failed to fetch products:", error);
+//         return {
+//           props: {
+//             topProducts: [],
+//             recProducts: [],
+//           },
+//         };
+//       }
+//     }
+
+
+
+
       break;
     case "POST":
       // Create a product
       try {
         const response = await fetch(
-          "http://localhost:7102/api/Home/CreateProduct",
+            process.env.API_URI + "/api/Home/CreateProduct",
           {
             method: "POST",
             headers: {
@@ -64,7 +99,7 @@ export default async function handler(req, res) {
       // Edit a product
       try {
         const response = await fetch(
-          `http://localhost:7102/api/Home/EditProduct?id=${req.query.id}`,
+            process.env.API_URI + `/api/Home/EditProduct?id=${req.query.id}`,
           {
             method: "PUT",
             headers: {
@@ -82,7 +117,7 @@ export default async function handler(req, res) {
       // Delete a product
       try {
         const response = await fetch(
-          `http://localhost:7102/api/Home/DeleteProduct?id=${req.query.id}`,
+            process.env.API_URI + `/api/Home/DeleteProduct?id=${req.query.id}`,
           {
             method: "DELETE",
           }
