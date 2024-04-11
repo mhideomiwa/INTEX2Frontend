@@ -1,8 +1,39 @@
-import React, { useState } from 'react'
+import React, {useRef, useState} from 'react'
+import { useStateContext} from "../context/StateContext";
 import Link from 'next/link'
 
 
+function CartItem({ item }) {
+
+
+    return (
+        <div className="cart-item">
+            <a href="" className="cart-item-image"><img src={item.imgLink} alt="Image" /></a>
+            <div className="cart-item-body">
+                <div className="row">
+                    <div className="col-9">
+                        <h5 className="cart-item-title">{item.name}</h5>
+                        <ul className="listfs-14">
+                            <li>Quantity {item.quantity}</li>
+                        </ul>
+                        <ul className="list list--horizontal fs-14">
+                            <li>${item.price}</li>
+                        </ul>
+                    </div>
+                    <div className="col-3 text-right">
+                        <ul className="cart-item-options">
+                            <li><a href="" className="icon-x"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const Navbar = () => {
+    const cartRef = useRef();
+    const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove, qty } = useStateContext();
 
     return (
         <header className="header header-absolute">
@@ -32,21 +63,6 @@ const Navbar = () => {
 
                     <div className="collapse navbar-collapse order-5 order-lg-3" id="navbarMenu2">
                         <ul className="navbar-nav ml-auto position-relative">
-
-                            {/*/!*search*!/*/}
-                            {/*<li className="nav-item dropdown dropdown-md dropdown-hover">*/}
-                            {/*    <a className="nav-icon dropdown-toggle" id="navbarDropdown-4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">*/}
-                            {/*        <i className="icon-search d-none d-lg-inline-block"></i>*/}
-                            {/*        <span className="d-inline-block d-lg-none">Search</span>*/}
-                            {/*    </a>*/}
-                            {/*    <div className="dropdown-menu" aria-labelledby="navbarDropdown-4">*/}
-                            {/*        <div className="form-group">*/}
-                            {/*            <input type="text" className="form-control" id="searchForm" placeholder="Search for items and brands" readOnly/>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</li>*/}
-
-
                             {/*user area*/}
                             <li className="nav-item dropdown dropdown-md dropdown-hover">
                                 <a className="nav-icon dropdown-toggle" id="navbarDropdown-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -100,42 +116,34 @@ const Navbar = () => {
                                             <h3 className="eyebrow text-dark fs-16 mb-0">My Bag</h3>
                                         </div>
                                         <div className="col-12">
-                                            <div className="cart-item">
-                                                <a href="" className="cart-item-image"><img src="assets/images/demo/product-1.jpg" alt="Image" /></a>
-                                                <div className="cart-item-body">
-                                                    <div className="row">
-                                                        <div className="col-9">
-                                                            <h5 className="cart-item-title">Bold Cuff Insert Polo Shirt</h5>
-                                                            <small>Fred Perry</small>
-                                                            <ul className="list list--horizontal fs-14">
-                                                                <li><s>$85.00</s></li>
-                                                                <li className="text-red">$42.00</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-3 text-right">
-                                                            <ul className="cart-item-options">
-                                                                <li><a href="" className="icon-x"></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                            {cartItems.length < 1 && (
+                                                <div className="empty-cart">
+                                                    Your Cart is Empty
                                                 </div>
-                                            </div>
+                                            )}
+
+                                            {cartItems.length >= 1 && cartItems.map((item) => (
+                                                <CartItem key={item.productId} item={item} />
+                                            ))}
                                         </div>
                                         <div className="col-12">
                                             <ul className="list-group list-group-minimal">
                                                 <li className="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-bold">
                                                     Subtotal
-                                                    <span>$78.00</span>
+                                                    <span>${totalPrice}</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="col-12">
-                                            <a href="" className="btn btn-primary btn-block">Add all to cart</a>
-                                            <a href="" className="btn btn-outline-secondary btn-block">View favorites</a>
+                                            <Link href="/checkout" className="btn btn-primary btn-block">Check Out</Link>
                                         </div>
                                     </div>
                                 </div>
                             </li>
+
+
+
+
                         </ul>
                     </div>
 
