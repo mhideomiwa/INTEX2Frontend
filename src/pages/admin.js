@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { TransactionHistory, ChangePassword, ViewProducts } from "../../components";
+import { TransactionHistory, ChangePassword, ViewProducts, AddProducts, FileUpload } from "../../components";
 
 function Account({products}) {
     const [activeTab, setActiveTab] = useState('sidebar-1-1'); // State to track the active tab
@@ -84,6 +84,11 @@ function Account({products}) {
 
                                     <div className={`tab-pane fade ${activeTab === 'sidebar-1-2' ? 'show active' : ''}`} id="sidebar-1-2" role="tabpanel" aria-labelledby="sidebar-1-2">
                                         <ViewProducts products={products} />
+                                    </div>
+
+                                    <div className={`tab-pane fade ${activeTab === 'sidebar-1-3' ? 'show active' : ''}`} id="sidebar-1-3" role="tabpanel" aria-labelledby="sidebar-1-3">
+                                        <FileUpload />
+                                        <AddProducts products={products} />
                                     </div>
                                 </div>
                             </div>
