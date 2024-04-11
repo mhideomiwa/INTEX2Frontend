@@ -328,73 +328,77 @@ const Checkout = () => {
             <aside class="col-lg-5">
               <div class="bg-white p-2 p-lg-3">
                 <h2 class="mb-3 text-uppercase fs-20">Order total</h2>
-                <div class="cart-item">
-                  <a href="#!" class="cart-item-image">
-                    <img src="assets/images/demo/product-1.jpg" alt="Image" />
-                  </a>
+
+                {cartItems.map((item) => (
                   <div class="cart-item-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <h5 class="cart-item-title">Blouse</h5>
-                        <ul class="list list--horizontal fs-14">
+                    <div key={item._id} className="cart-item col-12">
+                      <div>
+                        <img src={item.imgLink} alt="Image" className="img" />
+                      </div>
+                      <div>
+                        <h5 class="cart-item-title">{item.name}</h5>
+                        <ul class="list fs-14">
                           <li>
-                            <s>$29.00</s>
+                            <p>${item.price}</p>
                           </li>
-                          <li class="text-red">$19.00</li>
+                          <li>
+                            <p>Quantity: {item.quantity}</p>
+                          </li>
+                        </ul>
+
+                      </div>
+                      <div className="col-2 align-items-xl-end">
+                        <ul className="list-group-horizontal">
+                          <li>
+                            <button
+                              className="btn btn-group-square"
+                              onClick={() =>
+                                toggleCartItemQuantity(item.productId, "dec")
+                              }
+                            >
+                              <i className={"icon-minus"} />
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              className="btn btn-group-square"
+                              onClick={() =>
+                                toggleCartItemQuantity(item.productId, "inc")
+                              }
+                            >
+                              <i className="icon-plus" />
+                            </button>
+                          </li>
                         </ul>
                       </div>
-                      <div class="col-3 text-right">
+                      <div class="col-4 text-right">
                         <ul class="cart-item-options">
                           <li>
-                            <a href="" class="icon-x"></a>
+                            <a
+                              type="button"
+                              onClick={() => onRemove(item)}
+                              class="icon-x"
+                            ></a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="cart-item">
-                  <a href="#!" class="cart-item-image">
-                    <img src="assets/images/demo/product-3.jpg" alt="Image" />
-                  </a>
-                  <div class="cart-item-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <h5 class="cart-item-title">Skirt</h5>
-                        <ul class="list list--horizontal fs-14">
-                          <li>
-                            <s>$39.00</s>
-                          </li>
-                          <li class="text-red">$29.00</li>
-                        </ul>
-                      </div>
-                      <div class="col-3 text-right">
-                        <ul class="cart-item-options">
-                          <li>
-                            <a href="" class="icon-x"></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
+
                 <hr class="my-3" />
                 <ul class="list-group list-group-minimal">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
                     Items
-                    <span>$84.00</span>
+                    <span></span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
                     Shipping
                     <span>$8.00</span>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-red">
-                    Discount
-                    <span class="text-red">-$14.00</span>
-                  </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-bold">
                     Total to pay
-                    <span>$78.00</span>
+                    <span></span>
                   </li>
                 </ul>
               </div>
@@ -413,59 +417,6 @@ const Checkout = () => {
           </Link>
         </div>
       )}
-
-      {cartItems.map((item) => (
-        <div key={item._id} className="cart-item col-12">
-          <div>
-            <img src={item.imgLink} alt="Image" className="img" />
-          </div>
-          <div>
-            <h5>{item.name}</h5>
-            <ul>
-              <li>Quantity: {item.quantity}</li>
-            </ul>
-            <ul>
-              <li>${item.price}</li>
-            </ul>
-          </div>
-          <div className="col-2 align-items-xl-end">
-            <ul className="list-group-horizontal">
-              <li>
-                <button
-                  className="btn btn-group-square"
-                  onClick={() => toggleCartItemQuantity(item.productId, "inc")}
-                >
-                  <i
-                    className={"icon-minus"}
-                    onClick={() =>
-                      toggleCartItemQuantity(item.productId, "dec")
-                    }
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  className="btn btn-group-square"
-                  onClick={() => toggleCartItemQuantity(item.productId, "inc")}
-                >
-                  <i className="icon-plus" />
-                </button>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <button
-                  className="btn btn-danger"
-                  type="button"
-                  onClick={() => onRemove(item)}
-                >
-                  Remove
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      ))}
     </div>
   );
 };

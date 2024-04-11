@@ -34,7 +34,7 @@ function Aboutus(props) {
                             <div className="bg-white p-4">
                                 <h2 className="text-uppercase">The History</h2>
                                 <p>
-                                    Hey there, fellow Lego enthusiasts! I'm Auroro, a passionate Lego master builder and TikTok Lego influencer.
+                                    Hey there, fellow Lego enthusiasts! I'm Aurora, a passionate Lego master builder and TikTok Lego influencer.
                                     I'm thrilled to welcome you to my new website, where I'll be sharing all things Lego, from tips and tricks to jaw-dropping creations.
                                 </p>
                                 <p>
