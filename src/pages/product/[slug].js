@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import {useStateContext} from "../../../context/StateContext";
 import axios from 'axios';
+require('dotenv').config();
+//TODO: Replace the localhost with the actual API URL before pushing to prod
+
 
 const ProductDetails = () => {
     const router = useRouter();
     const { slug, id: productId } = router.query;
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
+    // console.log('UseStateContext', useStateContext())
+    const{decQty, inQty, qty, onAdd, setShowCart} = useStateContext();
+
+
 
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(process.env.API_URI + `/api/Home/GetOneProduct?id=${productId}`);
+                const response = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneProduct?id=${productId}`);
                 setProduct(response.data[0]);
                 console.log("RESPONSE:", response.data);
                 setLoading(false);
@@ -72,7 +80,7 @@ const ProductDetails = () => {
 
                             <div className="row gutter-2">
                                 <div className="col-12">
-                                    <a href="" className="btn btn-block btn-primary">Add to Cart</a> {/*Make this button work*/}
+                                    <button className="btn btn-block btn-primary" onClick={() => onAdd(product,qty)}>Add to Cart</button> {/*Make this button work*/}
                                 </div>
                             </div>
 
