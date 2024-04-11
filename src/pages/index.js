@@ -124,7 +124,7 @@ const Home = ({ topProducts, recProducts }) => {
 export async function getStaticProps() {
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
   const res = await
-      fetch(process.env.LOCAL_API_URL + "/api/Home/GetAllProducts");
+      fetch(process.env.API_URI + "/api/Home/GetAllProducts");
   const allProducts = await res.json();
   return {
     props: {

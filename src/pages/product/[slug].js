@@ -11,7 +11,7 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(process.env.LOCAL_API_URL + `/api/Home/GetOneProduct?id=${productId}`);
+                const response = await axios.get(process.env.API_URI + `/api/Home/GetOneProduct?id=${productId}`);
                 setProduct(response.data[0]);
                 console.log("RESPONSE:", response.data);
                 setLoading(false);
