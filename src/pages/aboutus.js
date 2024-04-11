@@ -9,11 +9,6 @@ function Aboutus(props) {
                      data--100-bottom-top="transform: translateY(0%);"
                      data-top-bottom="transform: translateY(25%);"></div>
                 <div className="container">
-                    <div className="row">
-                        <div className="col text-center">
-                            <i className="icon-check"></i>
-                        </div>
-                    </div>
                     <div className="translate-left-25">
                         <div className=" row justify-content-center vh-100">
                             <div className="col-md-4 align-self-center text-white text-center">

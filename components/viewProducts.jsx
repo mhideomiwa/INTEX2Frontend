@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function editProduct(product) {
     console.log('Edit:', product);
@@ -60,13 +60,46 @@ const ProductCard = ({ product, index }) => {
     );
 };
 
-const ViewProducts = ({ products }) => {
-    if (!products) {
+const ViewProducts = () => {
+    const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage, setProductsPerPage] = useState(5);
+    const totalPages = Math.ceil(products.length / productsPerPage);
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    // Function to handle change in items per page
+    const handleItemsPerPageChange = (e) => {
+        const newItemsPerPage = parseInt(e.target.value);
+        setProductsPerPage(newItemsPerPage);
+        setCurrentPage(1); // Reset to first page when changing items per page
+    };
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch("https://localhost:7102/api/Home/GetAllProducts"); // Adjust the endpoint accordingly
+                const data = await response.json();
+                setProducts(data);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    if (loading) {
         return <div>Loading...</div>;
     }
 
     return (
-        <div>
+        <>
             <h1>View/Edit Products</h1>
             <div className="row">
                 <div className="col-12">
@@ -84,12 +117,60 @@ const ViewProducts = ({ products }) => {
                 </div>
             </fieldset>
 
+            <div className="row gutter-1 align-items-end">
+                <div className="col-md-6 text-md-right">
+                    <ul className="list list--horizontal list--separated text-muted fs-14">
+                        <li>
+                            <span>
+                                <form>
+                                    Items per page:
+                                    <select name="itemsPerPage" id="itemsPerPage" onChange={handleItemsPerPageChange} value={productsPerPage} className="select-frame">
+                                        <option value="5" className='selector'>5</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </form>
+                            </span>
+                        </li>
+                        <li>
+                            <span className="text-primary">/{products.length} items</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div className="row gutter-1">
-                {products.map((product, index) => (
+                {currentProducts.map((product, index) => (
                     <ProductCard key={product.productId} product={product} index={index} />
                 ))}
             </div>
-        </div>
+
+            <div className="row">
+                <div className="col">
+                    <nav aria-label="Page navigation">
+                        <ul className="pagination">
+                            <li className="page-item">
+                                <button className="page-link" onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
+                                    Previous
+                                </button>
+                            </li>
+                            {Array.from({ length: totalPages }, (_, index) => (
+                                <li className={`page-item ${index + 1 === currentPage ? 'active' : ''}`} key={index}>
+                                    <button className="page-link" onClick={() => paginate(index + 1)}>
+                                        {index + 1}
+                                    </button>
+                                </li>
+                            ))}
+                            <li className="page-item">
+                                <button className="page-link" onClick={() => paginate(currentPage + 1)} disabled={currentPage === totalPages}>
+                                    Next
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </>
     );
 };
 

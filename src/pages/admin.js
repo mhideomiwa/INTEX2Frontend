@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { TransactionHistory, ChangePassword, ViewProducts, AddProducts, FileUpload } from "../../components";
+import { TransactionHistory, ViewProducts, AddProducts, FileUpload, ViewUsers } from "../../components";
 
-function Account({products}) {
+function Admin({products, orders, users}) {
     const [activeTab, setActiveTab] = useState('sidebar-1-1'); // State to track the active tab
-    const [lavalampStyle, setLavalampStyle] = useState({}); // State to track lavalamp style
 
     useEffect(() => {
         // Function to handle tab switching
@@ -11,12 +10,7 @@ function Account({products}) {
             e.preventDefault(); // Prevent default anchor behavior
             const targetId = e.target.getAttribute('href').substring(1); // Get the target tab pane id
             setActiveTab(targetId); // Update the active tab state
-            const targetLink = e.target.getBoundingClientRect(); // Get the bounding box of the clicked link
-            setLavalampStyle({
-                width: `${targetLink.width}px`,
-                height: `${targetLink.height}px`,
-                transform: `translate(${targetLink.left}px, ${targetLink.bottom}px)`
-            }); // Update lavalamp style
+            // Update lavalamp style
         };
 
         // Attach click event listeners to tab links
@@ -69,9 +63,6 @@ function Account({products}) {
                                        aria-selected={activeTab === 'sidebar-1-2' ? 'true' : 'false'}>
                                         <i className="fs-24 icon-users"></i> Edit Users
                                     </a>
-
-
-                                    <div className="lavalamp-object ease" style={lavalampStyle}></div> {/* lavalamp effect */}
                                 </div>
                             </aside>
                         </div>
@@ -88,7 +79,10 @@ function Account({products}) {
 
                                     <div className={`tab-pane fade ${activeTab === 'sidebar-1-3' ? 'show active' : ''}`} id="sidebar-1-3" role="tabpanel" aria-labelledby="sidebar-1-3">
                                         <FileUpload />
-                                        <AddProducts products={products} />
+                                        <AddProducts/>
+                                    </div>
+                                    <div className={`tab-pane fade ${activeTab === 'sidebar-1-4' ? 'show active' : ''}`} id="sidebar-1-4" role="tabpanel" aria-labelledby="sidebar-1-4">
+                                        <ViewUsers users={users} />
                                     </div>
                                 </div>
                             </div>
@@ -101,18 +95,30 @@ function Account({products}) {
 }
 
 
-export async function getServerSideProps() {
-    // console.log('API_URI:', process.env.API_URI)
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-    const res = await fetch(process.env.API_URI + "/api/Home/GetAllProducts");
-    const allProducts = await res.json();
-    // console.log('All Products:', allProducts)
-    return {
-        props: {
-            products: allProducts
-        },
-    }
-}
+// export async function getServerSideProps() {
+//     // console.log('API_URI:', process.env.API_URI)
+//     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+//     const productRes = await fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+//     const orderRes = await fetch(process.env.API_URI + "/api/Home/GetAllOrders");
+//     const userRes = await fetch(process.env.API_URI + "/api/Home/GetAllCustomers");
+//
+//
+//     const allProducts = await productRes.json();
+//     const allOrders = await orderRes.json();
+//     const allUsers = await userRes.json();
+//
+//     console.log('All Users:', allUsers.slice(0,25))
+//
+//     // console.log('All Products:', allProducts)
+//     return {
+//         props: {
+//             products: allProducts,
+//             orders: allOrders,
+//             users: allUsers,
+//
+//         },
+//     }
+// }
 
 
-export default Account;
+export default Admin;
