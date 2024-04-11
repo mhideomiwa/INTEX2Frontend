@@ -1,11 +1,20 @@
 .productItemImage {
-  width: 25em;
-  height: 25em;
+  width: auto;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
+  max-height: 400px;
+  min-height: 100px;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
 }
 .productTitle {
   max-width: 25em; /* Adjust the max-width as needed */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.category:hover .productItemImage {
+  transform: scale(1.1); /* Zooms in the image */
 }

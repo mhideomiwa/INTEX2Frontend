@@ -43,21 +43,20 @@ const Home = ({ topProducts, recProducts }) => {
       {/*Carousel*/}
       <section className="no-overflow py-5">
         <div className="container">
-          <div className="row align-items-center gutter-1">
-            <div className="col-lg-3">
-              <div className="pr-lg-5">
-                <div className="level-1">
-                  <span className="eyebrow text-muted">Hot Products</span>
-                  <h2>Top Sellers</h2>
-                  <div className="nav nav-tabs flex-lg-column mt-md-3 lavalamp"></div>
-                </div>
+          <div className="row mb-3">
+            <div className="col-lg-12">
+              <div className="level-1">
+                <span className="eyebrow text-muted">Hot Products</span>
+                <h2>Top Sellers</h2>
               </div>
             </div>
-            <div className="col-lg-9">
-              <div className="row gutter-2 filtr-container">
+            <div className="col-lg-12">
+              <div className="carouselContainer">
                 {/* Render each product using the CarouselItem component */}
                 {topProducts?.map((product) => (
-                  <CarouselItem item={product} key={product.productId} />
+                  <div className="carouselItem">
+                    <CarouselItem item={product} key={product.productId} />
+                  </div>
                 ))}
                 {/*console.log(topProducts);*/}
               </div>

@@ -1462,6 +1462,65 @@ select.form-control:focus::-ms-value {
   display: block;
   width: 100%; }
 
+.carouselContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  align-items: flex-end;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carouselContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.carouselItem {
+  flex: 0 0 auto; 
+  width: 33%;
+  scroll-snap-align: start; 
+  margin-right: 20px; /* Adds space between items, adjust as needed */
+  width: 33%; /* Adjust based on how many items you want visible at once */
+  flex: 0 0 auto; /* Don't grow, don't shrink, and don't allow wrapping */
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.carouselContainer .row {
+  flex-wrap: nowrap; /* Prevents flex items from wrapping */
+  overflow-x: auto;   /* Allows horizontal scrolling */
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.productContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.productItem {
+  flex: 0 0 20%; 
+  scroll-snap-align: start; 
+  margin-right: 20px; /* Adds space between items, adjust as needed */
+  flex: 0 0 auto; /* Don't grow, don't shrink, and don't allow wrapping */
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.productContainer .row {
+  flex-wrap: nowrap; /* Prevents flex items from wrapping */
+  overflow-x: auto;   /* Allows horizontal scrolling */
+}
+
 .col-form-label {
   padding-top: calc(0.875rem + 1px);
   padding-bottom: calc(0.875rem + 1px);
@@ -12365,7 +12424,13 @@ img {
     background: #000;
     color: #fff; }
 
+  .category--alt:hover img {
+    transform: scale(1.1); /* Zooms in the image */
+    transition: transform 0.4s ease, filter 0.3s ease; /* transitions for smooth effect */
+  }
+  
 .category--alt figcaption {
+  transition: transform 0.4s ease, filter 0.3s ease; /* transitions for smooth effect */
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;

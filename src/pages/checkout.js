@@ -166,52 +166,7 @@ const Checkout = () => {
               </div>
 
               <div class="bg-white p-2 p-lg-3 mb-1">
-                <h2 class="mb-3 text-uppercase fs-20">Delivery Options</h2>
-                <div class="custom-control custom-choice">
-                  <input
-                    type="radio"
-                    name="choice-shipping"
-                    class="custom-control-input"
-                    id="custom-choice-1"
-                  />
-                  <label
-                    class="custom-control-label text-dark d-flex justify-content-between align-items-center"
-                    for="custom-choice-1"
-                  >
-                    <span>
-                      <h4 class="custom-choice-title">Standard</h4>
-                      <span class="text-muted fs-14">
-                        Estimated delivery: 5-9 business days
-                      </span>
-                    </span>
-                    <span class="text-uppercase">Free</span>
-                  </label>
-                </div>
-                <div class="custom-control custom-choice">
-                  <input
-                    type="radio"
-                    name="choice-shipping"
-                    class="custom-control-input"
-                    id="custom-choice-2"
-                  />
-                  <label
-                    class="custom-control-label text-dark d-flex justify-content-between align-items-center"
-                    for="custom-choice-2"
-                  >
-                    <span>
-                      <h4 class="custom-choice-title">Express</h4>
-                      <span class="text-muted fs-14">
-                        Estimated delivery: 2-3 business days
-                      </span>
-                    </span>
-                    <span class="text-uppercase">$8.00</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="bg-white p-2 p-lg-3 mb-1">
                 <h2 class="mb-2 text-uppercase fs-20">Payment</h2>
-
                 <fieldset class="mb-2">
                   <div class="row">
                     <div class="col">
@@ -345,7 +300,6 @@ const Checkout = () => {
                             <p>Quantity: {item.quantity}</p>
                           </li>
                         </ul>
-
                       </div>
                       <div className="col-2 align-items-xl-end">
                         <ul className="list-group-horizontal">
@@ -392,13 +346,9 @@ const Checkout = () => {
                     Items
                     <span></span>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Shipping
-                    <span>$8.00</span>
-                  </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-bold">
                     Total to pay
-                    <span></span>
+                    <span>${totalPrice}</span>
                   </li>
                 </ul>
               </div>

@@ -58,7 +58,7 @@ const Products = ({ products }) => {
                     </div>
 
                     {/*products*/}
-                    <div className="row gutter-1">
+                    <div className="productContainer">
                         {/* Render each product using the ProductItem component */}
                         {currentProducts.map((product) => (
                             <ProductItem product={product} key={product.productId} />
