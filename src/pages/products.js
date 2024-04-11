@@ -61,7 +61,7 @@ const Products = ({ products }) => {
                     <div className="row gutter-1">
                         {/* Render each product using the ProductItem component */}
                         {currentProducts.map((product) => (
-                            <ProductItem product={product} key={product.product_id} />
+                            <ProductItem product={product} key={product.productId} />
                         ))}
                     </div>
 
@@ -97,12 +97,15 @@ const Products = ({ products }) => {
 }
 
 export async function getStaticProps() {
-    const products = dummyData;
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    const res = await
+        fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+    const allProducts = await res.json();
     return {
         props: {
-            products,
+            products: allProducts
         },
-    };
+    }
 }
 
 export default Products;

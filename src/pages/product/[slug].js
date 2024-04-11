@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import dummyData from '../../../dummydata/dummydata.json';
+import axios from 'axios';
 
-const ProductDetails = ({ product }) => {
+const ProductDetails = () => {
     const router = useRouter();
-    const { slug } = router.query;
-    const selectedProduct = product || dummyData.find(item => item.slug === slug);
+    const { slug, id: productId } = router.query;
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-    if (!selectedProduct) {
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const response = await axios.get(process.env.API_URI + `/api/Home/GetOneProduct?id=${productId}`);
+                setProduct(response.data[0]);
+                console.log("RESPONSE:", response.data);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching product:', error);
+                setLoading(false);
+            }
+        };
+
+        if (productId) {
+            fetchProduct();
+        }
+    }, [productId]);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (!product) {
         return <div>Product not found</div>;
     }
 
-    const { product_ID, name, year, num_parts, price, img_link, primary_color, secondary_color, description, category } = selectedProduct;
-
-
-    // const handleBuyNow = () => {
-    //     onAdd(product, qty);
-    //     setShowCart(true);
-    // }
+    const { name, num_parts, price, imgLink, description, category } = product;
 
     return (
         <div>
@@ -33,7 +50,7 @@ const ProductDetails = ({ product }) => {
                                 <div className="col-lg-10 order-lg-2">
                                     <div className="align-items-center">
                                         <figure className="text-center">
-                                            <a href={img_link}><img src={img_link} alt="Image" /></a>
+                                            <a href={imgLink}><img src={imgLink} alt="Image" /></a>
                                         </figure>
                                     </div>
                                 </div>
@@ -103,27 +120,7 @@ const ProductDetails = ({ product }) => {
             <script src="/assets/js/vendor.min.js"></script>
             <script src="/assets/js/app.js"></script>
         </div>
-    )
-}
+    );
+};
 
-
-
-//Get the data for the product from the slug that was clicked to get here
-export async function getServerSideProps({ params }) {
-    // Fetch data from your JSON file, database, or any other source based on the slug
-    const { slug } = params;
-    // You can fetch data from your JSON file here
-    // For example:
-    // const res = await fetch(`https://api.example.com/products/${slug}`);
-    // const product = await res.json();
-
-    // For demonstration, assuming you're fetching from a JSON file
-    const product = dummyData.find(item => item.slug === slug);
-
-    return {
-        props: {
-            product,
-        },
-    };
-}
 export default ProductDetails;

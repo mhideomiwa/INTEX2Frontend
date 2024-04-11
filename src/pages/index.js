@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import https from 'https';
 // import dummyData from "../../dummydata/dummydata.json";
 import Link from "next/link";
 import { CarouselItem, BlockItem } from "../../components";
+import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,14 +56,10 @@ const Home = ({ topProducts, recProducts }) => {
             <div className="col-lg-9">
               <div className="row gutter-2 filtr-container">
                 {/* Render each product using the CarouselItem component */}
-                {topProducts.map((product) => (
-                  <div
-                    className="col-md-6 col-lg-4 filtr-item"
-                    key={product.product_ID}
-                  >
-                    <CarouselItem item={product} />
-                  </div>
+                {topProducts?.map((product) => (
+                  <CarouselItem item={product} key={product.productId} />
                 ))}
+                {/*console.log(topProducts);*/}
               </div>
             </div>
           </div>
@@ -114,7 +112,7 @@ const Home = ({ topProducts, recProducts }) => {
           <div className="row gutter-1">
             {/* Render each product using the blockItem component */}
             {recProducts.map((product) => (
-              <BlockItem item={product} key={product.product_ID} />
+              <BlockItem item={product} key={product.productId} />
             ))}
           </div>
         </div>
@@ -123,53 +121,19 @@ const Home = ({ topProducts, recProducts }) => {
   );
 };
 
-// export async function getStaticProps() {
-//     const topProducts = dummyData.slice(0, 3);
-//     const recProducts = dummyData.slice(4, 12);
-//     return {
-//         props: {
-//             topProducts,
-//             recProducts,
-//         },
-//     };
-// }
 export async function getStaticProps() {
-  try {
-    // Fetch top products
-    const topProductsResponse = await fetch(
-      "http://localhost:7102/api/Home/GetAllProducts",
-      {
-        timeout: 30000, // Increase the timeout duration (e.g., 30 seconds)
-      }
-    );
-    const topProducts = await topProductsResponse.json();
-
-    // Fetch recommended products
-    const recProductsResponse = await fetch(
-      "http://localhost:7102/api/Home/GetAllProducts",
-      {
-        timeout: 30000, // Increase the timeout duration (e.g., 30 seconds)
-      }
-    );
-    const recProducts = await recProductsResponse.json();
-
-    return {
-      props: {
-        topProducts,
-        recProducts,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching products:", error);
-    console.error("Error details:", error.message);
-    console.error("Error stack trace:", error.stack);
-    return {
-      props: {
-        topProducts: [],
-        recProducts: [],
-      },
-    };
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+  const res = await
+      fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+  const allProducts = await res.json();
+  return {
+    props: {
+        topProducts: allProducts.slice(0, 3),
+        recProducts: allProducts.slice(4, 12),
+    },
   }
 }
+
+
 
 export default Home;
