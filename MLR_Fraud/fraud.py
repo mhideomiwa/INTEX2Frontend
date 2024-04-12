@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
+from sklearn.ensemble import ExtraTreesClassifier
 
 import onnx
 from skl2onnx import convert_sklearn

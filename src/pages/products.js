@@ -50,9 +50,9 @@ const Products = ({ products }) => {
                                         </form>
                                     </span>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <span className="text-primary">/{products.length} items</span>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const Products = ({ products }) => {
 
                     <div className="row">
                         <div className="col">
-                            <nav aria-label="Page navigation">
+                            <nav aria-label="Page navigation" style={{ display: 'flex', justifyContent: 'center'}}>
                                 <ul className="pagination">
                                     <li className="page-item">
                                         <button className="page-link" onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>

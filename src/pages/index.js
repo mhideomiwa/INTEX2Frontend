@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import https from 'https';
+import https from "https";
 // import dummyData from "../../dummydata/dummydata.json";
 import Link from "next/link";
 import { CarouselItem, BlockItem } from "../../components";
@@ -19,10 +19,10 @@ const Home = ({ topProducts, recProducts }) => {
             <div className="swiper-slide">
               <div
                 className="image image--overlay"
-                style={{ backgroundImage: "url(assets/images/homeBg.jpg)" }}
+                style={{ backgroundImage: "url(assets/images/beatles.jpg)" }}
               ></div>
               <div className="container">
-                <div className="row align-items-end vh-100">
+                <div className="row align-items-end vh-120">
                   <div
                     className="col-lg-8 text-white"
                     data-swiper-parallax-x="-100%"
@@ -77,7 +77,7 @@ const Home = ({ topProducts, recProducts }) => {
                 }}
               ></div>
               <div className="container">
-                <div className="row align-items-end vh-100">
+                <div className="row align-items-end vh-120">
                   <div
                     className="col-lg-8 text-white"
                     data-swiper-parallax-x="-100%"
@@ -122,17 +122,15 @@ const Home = ({ topProducts, recProducts }) => {
 
 export async function getStaticProps() {
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-  const res = await
-      fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+  const res = await 
+    fetch(process.env.API_URI + "/api/Home/GetAllProducts");
   const allProducts = await res.json();
   return {
     props: {
-        topProducts: allProducts.slice(0, 3),
-        recProducts: allProducts.slice(4, 12),
+      topProducts: allProducts.slice(0, 3),
+      recProducts: allProducts.slice(4, 12),
     },
   }
 }
-
-
 
 export default Home;
