@@ -119,6 +119,7 @@ const Home = ({ topProducts, recProducts }) => {
 };
 
 export async function getStaticProps() {
+
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
   const res = await 
     fetch(process.env.API_URI + "/api/Home/GetAllProducts");
@@ -126,8 +127,6 @@ export async function getStaticProps() {
     const res2 = await
         fetch(process.env.API_URI + "/api/Home/GetOneUserCollab?userId=" + userId);
   }
-
-
   const allProducts = await res.json();
   const topProducts = allProducts.slice(0, 3);
 
@@ -144,7 +143,7 @@ export async function getStaticProps() {
       topProducts: topProducts,
       recProducts: recProducts,
     },
-  }
+  };
 }
 
 export default Home;
