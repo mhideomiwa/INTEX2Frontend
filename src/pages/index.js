@@ -1,15 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import https from "https";
+import {Inter} from "next/font/google";
 // import dummyData from "../../dummydata/dummydata.json";
 import Link from "next/link";
-import { CarouselItem, BlockItem } from "../../components";
-import axios from "axios";
+import {BlockItem, CarouselItem} from "../../components";
 
 const inter = Inter({ subsets: ["latin"] });
+const userId = null;
 
 const Home = ({ topProducts, recProducts }) => {
+
   return (
     <div>
       {/*Swiper Banner*/}
@@ -124,11 +122,27 @@ export async function getStaticProps() {
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
   const res = await 
     fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+  if(userId) {
+    const res2 = await
+        fetch(process.env.API_URI + "/api/Home/GetOneUserCollab?userId=" + userId);
+  }
+
+
   const allProducts = await res.json();
+  const topProducts = allProducts.slice(0, 3);
+
+  let recProducts = allProducts.slice(4, 12);
+  if(userId) {
+    recProducts = await res2.json();
+  }
+
+
+
+
   return {
     props: {
-      topProducts: allProducts.slice(0, 3),
-      recProducts: allProducts.slice(4, 12),
+      topProducts: topProducts,
+      recProducts: recProducts,
     },
   }
 }

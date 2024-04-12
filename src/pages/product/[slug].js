@@ -1,27 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
-import {useStateContext} from "../../../context/StateContext";
-//TODO: Replace the localhost with the actual API URL before pushing to prod
-
+import { useStateContext } from "../../../context/StateContext";
+import Link from "next/link";
+import {BlockItem} from "../../../components";
 
 const ProductDetails = () => {
     const router = useRouter();
     const { slug, id: productId } = router.query;
     const [product, setProduct] = useState(null);
+    const [recommendedProducts, setRecommendedProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    // console.log('UseStateContext', useStateContext())
-    const{decQty, inQty, qty, onAdd, setShowCart} = useStateContext();
-
-
+    const { decQty, inQty, qty, onAdd, setShowCart } = useStateContext();
 
     useEffect(() => {
         const fetchProduct = async () => {
             try {
                 const response = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneProduct?id=${productId}`);
-                // const response = await axios.get(`https://localhost:7102/api/Home/GetOneProduct?id=${productId}`);
                 setProduct(response.data[0]);
-                console.log("RESPONSE:", response.data);
                 setLoading(false);
             } catch (error) {
                 console.error('Error fetching product:', error);
@@ -29,8 +25,29 @@ const ProductDetails = () => {
             }
         };
 
+        const fetchRecommendedProducts = async () => {
+            try {
+                const response = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneContentFiltering?id=${productId}`);
+                const recommendations = response.data;
+                const recommendedProductsData = await Promise.all(
+                    Object.entries(recommendations)
+                        .filter(([key, value]) => key.startsWith('recommendation'))
+                        .map(async ([key, recommendationId]) => {
+                            const productResponse = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneProduct?id=${recommendationId}`);
+                            return productResponse.data[0];
+                        })
+                );
+                console.log('Recommended products:', recommendedProductsData)
+                setRecommendedProducts(recommendedProductsData);
+            } catch (error) {
+                console.error('Error fetching recommended products:', error);
+            }
+        };
+
+
         if (productId) {
             fetchProduct();
+            fetchRecommendedProducts();
         }
     }, [productId]);
 
@@ -45,6 +62,21 @@ const ProductDetails = () => {
             </div>
         );
     }
+
+    // Render recommended product cards
+    const recommendedProductCards = recommendedProducts.map((recommendedProduct) => (
+        <div className="card card-product" key={recommendedProduct.productId}>
+            <figure className="card-image">
+                <Link href={`/product/${recommendedProduct.slug}?id=${recommendedProduct.productId}`} className="action">
+                    <img src={recommendedProduct.imgLink} alt="Image" />
+                </Link>
+            </figure>
+            <Link href={`/product/${recommendedProduct.slug}?id=${recommendedProduct.productId}`} className="card-body">
+                <h3 className="card-title">{recommendedProduct.name}</h3>
+                <span className="price">${recommendedProduct.price}</span>
+            </Link>
+        </div>
+    ));
 
     const { name, num_parts, price, imgLink, description, category } = product;
 
@@ -111,26 +143,31 @@ const ProductDetails = () => {
                                 </div>
                             </div>
 
-                            {/*do we want these?*/}
-                            {/*<div className="form-group">*/}
-                            {/*    <label>Share this product</label>*/}
-                            {/*    <div>*/}
-                            {/*        <ul className="list list--horizontal">*/}
-                            {/*            <li><a href="" className="text-hover-facebook"><i className="fs-28 icon-facebook-square-brands"></i></a></li>*/}
-                            {/*            <li><a href="" className="text-hover-instagram"><i className="fs-28 icon-instagram-square-brands"></i></a></li>*/}
-                            {/*            <li><a href="" className="text-hover-twitter"><i className="fs-28 icon-twitter-square-brands"></i></a></li>*/}
-                            {/*            <li><a href="" className="text-hover-pinterest"><i className="fs-28 icon-pinterest-square-brands"></i></a></li>*/}
-                            {/*        </ul>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
+
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <script src="/assets/js/vendor.min.js"></script>
-            <script src="/assets/js/app.js"></script>
+            <section className="no-overflow">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <h2>Recommended</h2>
+                        </div>
+                    </div>
+                    <div className="row gutter-1">
+                        {/* Render each product using the blockItem component */}
+                        {recommendedProducts.map((product) => (
+                            <BlockItem item={product} key={product.productId} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/*<script src="/assets/js/vendor.min.js"></script>*/}
+            {/*<script src="/assets/js/app.js"></script>*/}
         </div>
     );
 };

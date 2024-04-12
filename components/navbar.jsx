@@ -44,9 +44,9 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse order-4 order-lg-1" id="navbarMenu">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item dropdown dropdown-sm dropdown-hover">
-                                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <Link className="nav-link dropdown-toggle" href="/" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item dropdown dropdown-lg dropdown-hover">
                                 <Link className="nav-link dropdown-toggle" href="/products" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,9 +54,9 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/aboutus">
+                                <Link className="nav-link" href="/aboutus">
                                     About Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -65,41 +65,10 @@ const Navbar = () => {
                         <ul className="navbar-nav ml-auto position-relative">
                             {/*user area*/}
                             <li className="nav-item dropdown dropdown-md dropdown-hover">
-                                <a className="nav-icon dropdown-toggle" id="navbarDropdown-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <Link className="nav-icon dropdown-toggle" href='login'>
                                     <i className="icon-user d-none d-lg-inline-block"></i>
                                     <span className="d-inline-block d-lg-none">Account</span>
-                                </a>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown-6">
-                                    <div className="row gutter-2">
-                                        <div className="col-12">
-                                            <fieldset>
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className="form-label-group">
-                                                            <input type="text" id="inputName" className="form-control form-control-lg" placeholder="Name" required="" value="Dumitru" readOnly/>
-                                                                <label for="inputName">First Name</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className="form-label-group">
-                                                            <input type="text" id="inputSurname" className="form-control form-control-lg" placeholder="Surname" required="" readOnly/>
-                                                                <label for="inputSurname">Surname</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                        <div className="col-12 text-center">
-                                            <a href="" className="underline fs-14">Forgot Password ?</a>
-                                        </div>
-                                        <div className="col-12">
-                                            <a href="" className="btn btn-primary btn-block">Sign In</a>
-                                            <a href="" className="btn btn-outline-secondary btn-block">Create Account</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </Link>
                             </li>
 
 
