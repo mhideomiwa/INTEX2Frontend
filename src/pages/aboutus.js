@@ -21,9 +21,8 @@ function Aboutus(props) {
 
             {/*article*/}
             <article>
-                <div className="container">
-                    <div className="row justify-content-center gutter-1">
-
+                <div className="containe">
+                    <div>
                         {/*post*/}
                         <div className="col-lg-8">
                             <div className="bg-white p-4">
