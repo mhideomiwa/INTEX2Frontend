@@ -97,13 +97,10 @@ const Home = ({ topProducts, recProducts }) => {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-8 col-md-6">
+              <br />
+              <br />
               <span className="eyebrow text-muted">Personalized Picks</span>
               <h2>Recommended For You</h2>
-            </div>
-            <div className="col-4 col-md-6 text-right">
-              <a href="" className="underlined">
-                View More
-              </a>
             </div>
           </div>
           <div className="row gutter-1">
