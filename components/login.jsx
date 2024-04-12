@@ -51,7 +51,7 @@ function Login() {
                             <div className="form-label-group">
                                 <input
                                     type="email"
-                                    id="inputEmail"
+                                    id="loginEmail"
                                     className="form-control form-control-lg"
                                     placeholder="Email address"
                                     required=""
@@ -59,7 +59,7 @@ function Login() {
                                     value={user.email}
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="inputEmail">Email address</label>
+                                <label htmlFor="loginEmail">Email address</label>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ function Login() {
                             <div className="form-label-group">
                                 <input
                                     type="password"
-                                    id="inputPassword"
+                                    id="loginPassword"
                                     className="form-control form-control-lg"
                                     placeholder="Password"
                                     required=""
@@ -76,7 +76,7 @@ function Login() {
                                     value={user.password}
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="inputPassword">Password</label>
+                                <label htmlFor="loginPassword">Password</label>
                             </div>
                         </div>
                     </div>

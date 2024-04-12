@@ -14,13 +14,13 @@ function Admin({products, orders, users}) {
         };
 
         // Attach click event listeners to tab links
-        document.querySelectorAll('.nav-link').forEach((link) => {
+        document.querySelectorAll('.sub-nav-link').forEach((link) => {
             link.addEventListener('click', handleTabClick);
         });
 
         // Cleanup event listeners when component unmounts
         return () => {
-            document.querySelectorAll('.nav-link').forEach((link) => {
+            document.querySelectorAll('.sub-nav-link').forEach((link) => {
                 link.removeEventListener('click', handleTabClick);
             });
         };
@@ -35,33 +35,27 @@ function Admin({products, orders, users}) {
                             <aside className="bg-white p-2 p-md-3">
                                 <h3 className="fs-20 text-uppercase text-muted mb-2">Welcome, John Doe!</h3>
                                 <div className="nav nav-menu flex-column lavalamp" id="sidebar-1" role="tablist">
-                                    <a className={`nav-link ${activeTab === 'sidebar-1-1' ? 'active' : ''}`} data-toggle="tab"
+                                    <a className={`sub-nav-link ${activeTab === 'sidebar-1-1' ? 'active' : ''}`} data-toggle="tab"
                                        href="#sidebar-1-1" role="tab" aria-controls="sidebar-1-1"
                                        aria-selected={activeTab === 'sidebar-1-1' ? 'true' : 'false'}>
                                         <i className="fs-24 icon-sidebar"></i> Transaction History </a>
 
-                                    <a className={`nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
+                                    <a className={`sub-nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
                                        href="#sidebar-1-2" role="tab" aria-controls="sidebar-1-2"
                                        aria-selected={activeTab === 'sidebar-1-2' ? 'true' : 'false'}>
                                         <i className="fs-24 icon-box"></i> View/Edit Products
                                     </a>
 
-                                    <a className={`nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
+                                    <a className={`sub-nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
                                        href="#sidebar-1-3" role="tab" aria-controls="sidebar-1-3"
                                        aria-selected={activeTab === 'sidebar-1-2' ? 'true' : 'false'}>
                                         <i className="fs-24 icon-box"></i> Add Products Products
                                     </a>
 
-                                    <a className={`nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
+                                    <a className={`sub-nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
                                        href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4"
                                        aria-selected={activeTab === 'sidebar-1-2' ? 'true' : 'false'}>
                                         <i className="fs-24 icon-users"></i> View Users
-                                    </a>
-
-                                    <a className={`nav-link ${activeTab === 'sidebar-1-2' ? 'active' : ''}`} data-toggle="tab"
-                                       href="#sidebar-1-5 role=" role="tab" aria-controls="sidebar-1-5"
-                                       aria-selected={activeTab === 'sidebar-1-2' ? 'true' : 'false'}>
-                                        <i className="fs-24 icon-users"></i> Edit Users
                                     </a>
                                 </div>
                             </aside>
