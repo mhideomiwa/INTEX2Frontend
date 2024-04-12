@@ -15,6 +15,8 @@ function AddProducts() {
         slug: '' // auto-generated
     });
 
+    const [successMessage, setSuccessMessage] = useState('');
+
     const addProduct = () => {
         // Auto-generate slug based on the name
         const slug = slugify(product.name, { lower: true });
@@ -39,7 +41,20 @@ function AddProducts() {
             })
             .then(data => {
                 console.log('Success:', data);
-                // If you want to do something after successful post
+                setSuccessMessage('Product added successfully!');
+                // Reset form fields
+                setProduct({
+                    name: '',
+                    year: '',
+                    numParts: '',
+                    price: '',
+                    imgLink: '',
+                    primaryColor: '',
+                    secondaryColor: '',
+                    description: '',
+                    category: '',
+                    slug: ''
+                });
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -48,27 +63,17 @@ function AddProducts() {
     };
 
     const handleChange = e => {
-        const {name, value} = e.target;
-
-        // If the changed field is the name, update the slug as well
-        if (name === 'name') {
-            const slug = slugify(value, {lower: true});
-            setProduct(prevProduct => ({
-                ...prevProduct,
-                [name]: value,
-                slug: slug
-            }));
-        } else {
-            setProduct(prevProduct => ({
-                ...prevProduct,
-                [name]: value
-            }));
-        }
+        const { name, value } = e.target;
+        setProduct(prevProduct => ({
+            ...prevProduct,
+            [name]: value
+        }));
     };
 
     return (
         <div className="row gutter-2">
             <div className="col-12">
+                {successMessage && <div className="alert alert-success">{successMessage}</div>}
                 <fieldset>
                     <div className="row">
                         <div className="col-12">
@@ -234,6 +239,5 @@ function AddProducts() {
         </div>
     );
 };
-
 
 export default AddProducts;
