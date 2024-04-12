@@ -19,7 +19,7 @@ function TransactionHistory() {
         // Function to fetch orders
         const fetchOrders = async () => {
             try {
-                const response = await fetch('https://localhost:7102/api/Home/GetAllOrders'); // Adjust the endpoint accordingly
+                const response = await fetch('https://intex2-backend.azurewebsites.net/api/Home/GetAllOrders'); // Adjust the endpoint accordingly
                 // console.log('Response:', response)
                 const data = await response.json();
                 setOrders(data);

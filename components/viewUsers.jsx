@@ -18,7 +18,7 @@ function ViewUsers() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await fetch("https://localhost:7102/api/Home/GetAllCustomers"); // Adjust the endpoint accordingly
+                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllCustomers"); // Adjust the endpoint accordingly
                 const data = await response.json();
                 setUsers(data);
                 setTotalPages(Math.ceil(data.length / rowsPerPage));

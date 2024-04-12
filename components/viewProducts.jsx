@@ -81,7 +81,7 @@ const ViewProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch("https://localhost:7102/api/Home/GetAllProducts"); // Adjust the endpoint accordingly
+                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllProducts"); // Adjust the endpoint accordingly
                 const data = await response.json();
                 setProducts(data);
                 setLoading(false);

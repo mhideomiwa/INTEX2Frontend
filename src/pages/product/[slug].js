@@ -18,8 +18,8 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                // const response = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneProduct?id=${productId}`);
-                const response = await axios.get(`https://localhost:7102/api/Home/GetOneProduct?id=${productId}`);
+                const response = await axios.get(`https://intex2-backend.azurewebsites.net/api/Home/GetOneProduct?id=${productId}`);
+                // const response = await axios.get(`https://localhost:7102/api/Home/GetOneProduct?id=${productId}`);
                 setProduct(response.data[0]);
                 console.log("RESPONSE:", response.data);
                 setLoading(false);
@@ -84,7 +84,7 @@ const ProductDetails = () => {
 
                             <div className="row gutter-2">
                                 <div className="col-12">
-                                    <a href="" className="btn btn-block btn-primary">Add to Cart</a> {/*Make this button work*/}
+                                    <button href="" className="btn btn-block btn-primary" onClick={() => onAdd(product,qty)}>Add to Cart</button>
                                 </div>
                             </div>
 

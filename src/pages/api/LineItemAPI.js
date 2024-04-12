@@ -7,7 +7,7 @@ export default async function handler(req, res) {
         // Get one line item
         try {
           const response = await fetch(
-            `https://localhost:7102/api/Home/GetOneLineItem?transactionId=${req.query.transactionId}&productId=${req.query.productId}`
+            `https://intex2-backend.azurewebsites.net/api/Home/GetOneLineItem?transactionId=${req.query.transactionId}&productId=${req.query.productId}`
           );
           const lineItem = await response.json();
           res.status(200).json(lineItem);
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         // Search line items
         try {
           const response = await fetch(
-            `https://localhost:7102/api/Home/SearchLineItems?searchTerm=${req.query.searchTerm}`
+            `https://intex2-backend.azurewebsites.net/api/Home/SearchLineItems?searchTerm=${req.query.searchTerm}`
           );
           const lineItems = await response.json();
           res.status(200).json(lineItems);
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
         try {
           const queryParams = new URLSearchParams(req.query).toString();
           const response = await fetch(
-            `https://localhost:7102/api/Home/${
+            `https://intex2-backend.azurewebsites.net/api/Home/${
               queryParams ? "FilterLineItems" : "GetAllLineItems"
             }?${queryParams}`
           );

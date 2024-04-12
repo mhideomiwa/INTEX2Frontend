@@ -24,7 +24,7 @@ function AddProducts() {
         }));
 
         // Make the API call
-        fetch('https://localhost:7102/api/Home/CreateProduct', {
+        fetch('https://intex2-backend.azurewebsites.net/api/Home/CreateProduct', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
