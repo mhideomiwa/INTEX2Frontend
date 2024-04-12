@@ -7,7 +7,7 @@ function ProductItem({ product: { name, num_parts, price, imgLink, slug, product
         <div>
             <div className="col-8 col-md-12">
                 <div className="card card-product">
-                    <figure className="card-image">
+                    <figure className="category category-alt">
                         <Link href={`/product/${slug}?id=${productId}`}>
                             <img src={imgLink} alt="Image" className={styles.productItemImage} />
                         </Link>
@@ -19,7 +19,7 @@ function ProductItem({ product: { name, num_parts, price, imgLink, slug, product
                             </Link>
                         </h3>
                         <span className="brand">${price}</span>
-                        <span className="brand">{num_parts} Pieces</span>
+                        <span className="brand">{num_parts}Pieces</span>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import https from 'https';
+import https from "https";
 // import dummyData from "../../dummydata/dummydata.json";
 import Link from "next/link";
 import { CarouselItem, BlockItem } from "../../components";
@@ -19,10 +19,10 @@ const Home = ({ topProducts, recProducts }) => {
             <div className="swiper-slide">
               <div
                 className="image image--overlay"
-                style={{ backgroundImage: "url(assets/images/homeBg.jpg)" }}
+                style={{ backgroundImage: "url(assets/images/beatles.jpg)" }}
               ></div>
               <div className="container">
-                <div className="row align-items-end vh-100">
+                <div className="row align-items-end vh-120">
                   <div
                     className="col-lg-8 text-white"
                     data-swiper-parallax-x="-100%"
@@ -43,21 +43,20 @@ const Home = ({ topProducts, recProducts }) => {
       {/*Carousel*/}
       <section className="no-overflow py-5">
         <div className="container">
-          <div className="row align-items-center gutter-1">
-            <div className="col-lg-3">
-              <div className="pr-lg-5">
-                <div className="level-1">
-                  <span className="eyebrow text-muted">Hot Products</span>
-                  <h2>Top Sellers</h2>
-                  <div className="nav nav-tabs flex-lg-column mt-md-3 lavalamp"></div>
-                </div>
+          <div className="row mb-3">
+            <div className="col-lg-12">
+              <div className="level-1">
+                <span className="eyebrow text-muted">Hot Products</span>
+                <h2>Top Sellers</h2>
               </div>
             </div>
-            <div className="col-lg-9">
-              <div className="row gutter-2 filtr-container">
+            <div className="col-lg-12">
+              <div className="carouselContainer">
                 {/* Render each product using the CarouselItem component */}
                 {topProducts?.map((product) => (
-                  <CarouselItem item={product} key={product.productId} />
+                  <div className="carouselItem">
+                    <CarouselItem item={product} key={product.productId} />
+                  </div>
                 ))}
                 {/*console.log(topProducts);*/}
               </div>
@@ -78,7 +77,7 @@ const Home = ({ topProducts, recProducts }) => {
                 }}
               ></div>
               <div className="container">
-                <div className="row align-items-end vh-100">
+                <div className="row align-items-end vh-120">
                   <div
                     className="col-lg-8 text-white"
                     data-swiper-parallax-x="-100%"
@@ -100,8 +99,8 @@ const Home = ({ topProducts, recProducts }) => {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-8 col-md-6">
-              <span className="eyebrow text-muted">Shop by category</span>
-              <h2>Trending Categories</h2>
+              <span className="eyebrow text-muted">Personalized Picks</span>
+              <h2>Recommended For You</h2>
             </div>
             <div className="col-4 col-md-6 text-right">
               <a href="" className="underlined">
@@ -123,17 +122,15 @@ const Home = ({ topProducts, recProducts }) => {
 
 export async function getStaticProps() {
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-  const res = await
-      fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+  const res = await 
+    fetch(process.env.API_URI + "/api/Home/GetAllProducts");
   const allProducts = await res.json();
   return {
     props: {
-        topProducts: allProducts.slice(0, 3),
-        recProducts: allProducts.slice(4, 12),
+      topProducts: allProducts.slice(0, 3),
+      recProducts: allProducts.slice(4, 12),
     },
   }
 }
-
-
 
 export default Home;

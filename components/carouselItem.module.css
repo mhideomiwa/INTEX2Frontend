@@ -1,5 +1,13 @@
 .carouselImage {
-    height: 20em;
-    width: 30em;
+    max-width: 100%; /* Maintains aspect ratio, adjust as necessary */
+    height: auto; /* Adjust height accordingly */
+    min-height: 200px; /* Sets a minimum height for smaller images */
     object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
 }
+
+.category:hover .carouselImage {
+    transform: scale(1.1); /* Zooms in the image */
+}
+
+

@@ -4,7 +4,7 @@ function Aboutus(props) {
     return (
         <div>
             {/*hero*/}
-            <section className="py-0 no-overflow vh-100 scroll-down">
+            <section className="py-0 no-overflow vh-80 scroll-down">
                 <div className="image image-scroll" style={{backgroundImage: "url(assets/images/legostormtrooper.jpg)"}}
                      data--100-bottom-top="transform: translateY(0%);"
                      data-top-bottom="transform: translateY(25%);"></div>
@@ -12,7 +12,7 @@ function Aboutus(props) {
                     <div className="translate-left-25">
                         <div className=" row justify-content-center vh-100">
                             <div className="col-md-4 align-self-center text-white text-center">
-                                <h1 className="text-uppercase fs-60">Our Story</h1>
+                                <h1 className="text-uppercase fs-60">Our Journey</h1>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ function Aboutus(props) {
                             <div className="bg-white p-4">
                                 <h2 className="text-uppercase">The History</h2>
                                 <p>
-                                    Hey there, fellow Lego enthusiasts! I'm Auroro, a passionate Lego master builder and TikTok Lego influencer.
+                                    Hey there, fellow Lego enthusiasts! I'm Aurora, a passionate Lego master builder and TikTok Lego influencer.
                                     I'm thrilled to welcome you to my new website, where I'll be sharing all things Lego, from tips and tricks to jaw-dropping creations.
                                 </p>
                                 <p>
