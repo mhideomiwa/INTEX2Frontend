@@ -14,7 +14,9 @@ function Signup() {
         state: '',
         zip: '',
         country: '',
-        agreeTerms: false
+        agreeTerms: false,
+        gender: '',
+        birthDay: '',
     });
 
     const [formErrors, setFormErrors] = useState({
@@ -28,7 +30,10 @@ function Signup() {
         state: '',
         zip: '',
         country: '',
-        agreeTerms: ''
+        agreeTerms: '',
+        general: '',
+        gender: '',
+        birthDay: '',
     });
 
     const handleChange = (e) => {
@@ -99,10 +104,71 @@ function Signup() {
         setFormErrors(errors);
         if (isValid) {
             // Submit the form
-            console.log('Form submitted:', formData);
-            // You can add your form submission logic here
+            fetch('https://intex2-backend.azurewebsites.net/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: formData.email,
+                    password: formData.password,
+                    firstName: formData.firstName,
+                    lastName: formData.lastName,
+                })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        setFormErrors({
+                            ...formErrors,
+                            general: 'An error occurred. Please try again later.'
+                        });
+                        throw new Error(response.status);
+                    }
+                    const birthDate = formData.birthDay; // No need to parse it again
+                    const age = new Date().getFullYear() - new Date(birthDate).getFullYear();
+                    fetch('https://intex2-backend.azurewebsites.net/api/Home/CreateCustomer', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            email: formData.email,
+                            firstName: formData.firstName,
+                            lastName: formData.lastName,
+                            birthDate: birthDate,
+                            countryOfResidence: formData.country,
+                            gender: formData.gender,
+                            age: age,
+                        })
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                setFormErrors({
+                                    ...formErrors,
+                                    general: 'An error occurred. Please try again later.'
+                                });
+                                throw new Error(response.status);
+                            }
+                            // Redirect to login page
+                            window.location.href = '/accountCreateSuccess';
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                })
+                .then(data => {
+                    // Registration successful, proceed to create customer
+                    return response.json()
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         }
     };
+
+
+
+
 
     return (
         <div className="row gutter-2">
@@ -185,11 +251,33 @@ function Signup() {
                                 {formErrors.country && <div className="text-danger">{formErrors.country}</div>}
                             </div>
                         </div>
+                        <div className="col-12">
+                            <div className="form-label-group">
+                                <select id="inputGender" className="form-control form-control-lg" name="gender" value={formData.gender} onChange={handleChange} required>
+                                    <option className="select" value="">Select Gender</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                    <option value="O">Other</option>
+                                </select>
+                                {formErrors.gender && <div className="text-danger">{formErrors.gender}</div>}
+                            </div>
+                        </div>
+
+                        <div className="col-12">
+                            <div className="form-label-group">
+                                <input type="date" id="inputBirthDay" className="form-control form-control-lg" name="birthDay" value={formData.birthDay} onChange={handleChange} required/>
+                                <label htmlFor="inputBirthDay">Birth Day</label>
+                                {formErrors.birthDay && <div className="text-danger">{formErrors.birthDay}</div>}
+                            </div>
+                        </div>
                     </div>
                     <div className="custom-control custom-checkbox mt-1">
                         <input type="checkbox" id="customCheckbox1" name="agreeTerms" className="custom-control-input" checked={formData.agreeTerms} onChange={handleChange}/>
                         <label className="custom-control-label text-muted" htmlFor="customCheckbox1">Yes, I agree to the <Link href="" className="underline">Terms and Conditions</Link></label>
                         {formErrors.agreeTerms && <div className="text-danger">{formErrors.agreeTerms}</div>}
+                    </div>
+                    <div>
+                        {formErrors.general && <div className="text-danger">{formErrors.general}</div>}
                     </div>
                     <div className="col-12">
                         <button type="submit" className="btn btn-primary btn-block">Create an account</button>

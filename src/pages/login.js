@@ -25,13 +25,13 @@ function Login(props) {
         };
 
         // Attach click event listeners to tab links
-        document.querySelectorAll('.nav-link').forEach((link) => {
+        document.querySelectorAll('.sub-nav-link').forEach((link) => {
             link.addEventListener('click', handleTabClick);
         });
 
         // Cleanup event listeners when component unmounts
         return () => {
-            document.querySelectorAll('.nav-link').forEach((link) => {
+            document.querySelectorAll('.sub-nav-link').forEach((link) => {
                 link.removeEventListener('click', handleTabClick);
             });
         };
@@ -51,10 +51,10 @@ function Login(props) {
                                 <div className="card-header">
                                     <ul className="nav nav-tabs nav-fill card-header-tabs lavalamp" id="component-1" role="tablist">
                                         <li className="nav-item">
-                                            <a className={`nav-link ${activeTab === 'component-1-1' ? 'active' : ''}`} href="#component-1-1" role="tab" aria-controls="component-1-1" aria-selected={activeTab === 'component-1-1' ? 'true' : 'false'}>Log In</a>
+                                            <a className={`nav-link sub-nav-link ${activeTab === 'component-1-1' ? 'active' : ''}`} href="#component-1-1" role="tab" aria-controls="component-1-1" aria-selected={activeTab === 'component-1-1' ? 'true' : 'false'}>Log In</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className={`nav-link ${activeTab === 'component-1-2' ? 'active' : ''}`} href="#component-1-2" role="tab" aria-controls="component-1-2" aria-selected={activeTab === 'component-1-2' ? 'true' : 'false'}>Sign Up</a>
+                                            <a className={`nav-link sub-nav-link${activeTab === 'component-1-2' ? 'active' : ''}`} href="#component-1-2" role="tab" aria-controls="component-1-2" aria-selected={activeTab === 'component-1-2' ? 'true' : 'false'}>Sign Up</a>
                                         </li>
                                     </ul>
                                 </div>
