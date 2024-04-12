@@ -3,13 +3,13 @@ import EditProductModal from './editProductModal';
 
 
 function deleteProduct(product) {
-    // Get the token from localStorage
-    const token = localStorage.getItem('accessToken');
+    // Get the token from sessionStorage
+    const token = sessionStorage.getItem('accessToken');
 
     // Check if token exists
     if (!token) {
         // Handle the case where token is not available
-        console.error('Token not found in localStorage');
+        console.error('Token not found in sessionStorage');
         return;
     }
 
@@ -60,13 +60,13 @@ const ViewProducts = () => {
     });
 
     function editProduct(product) {
-        // Get the token from localStorage
-        const token = localStorage.getItem('accessToken');
+        // Get the token from sessionStorage
+        const token = sessionStorage.getItem('accessToken');
 
         // Check if token exists
         if (!token) {
             // Handle the case where token is not available
-            console.error('Token not found in localStorage');
+            console.error('Token not found in sessionStorage');
             return;
         }
 
@@ -126,13 +126,13 @@ const ViewProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                // Get the token from localStorage
-                const token = localStorage.getItem('accessToken');
+                // Get the token from sessionStorage
+                const token = sessionStorage.getItem('accessToken');
 
                 // Check if token exists
                 if (!token) {
                     // Handle the case where token is not available
-                    console.error('Token not found in localStorage');
+                    console.error('Token not found in sessionStorage');
                     return;
                 }
 
