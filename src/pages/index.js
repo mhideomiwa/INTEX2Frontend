@@ -121,16 +121,15 @@ const Home = ({ topProducts, recProducts }) => {
 };
 
 export async function getStaticProps() {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-  const res = await 
-    fetch(process.env.API_URI + "/api/Home/GetAllProducts");
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  const res = await fetch(process.env.API_URI + "/api/Home/GetAllProducts");
   const allProducts = await res.json();
   return {
     props: {
       topProducts: allProducts.slice(0, 3),
       recProducts: allProducts.slice(4, 12),
     },
-  }
+  };
 }
 
 export default Home;
