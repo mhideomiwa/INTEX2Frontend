@@ -15,36 +15,36 @@ const Checkout = () => {
   } = useStateContext();
 
   const handleCheckout = async () => {
-    console.log("Checkout");
+    window.location.href = "/thankyou";
   };
 
   return (
     <div className="">
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col">
+        <div className="container">
+          <div className="row">
+            <div className="col">
               <br />
               <h1>Checkout</h1>
             </div>
           </div>
-          <div class="row gutter-1">
-            <div class="col">
-              <div class="bg-white p-2 p-lg-3 mb-1">
-                <div class="row gutter-1 align-items-center">
-                  <div class="col-md-6">
-                    <h2 class="text-uppercase fs-20">Delivery Address</h2>
+          <div className="row gutter-1">
+            <div className="col">
+              <div className="bg-white p-2 p-lg-3 mb-1">
+                <div className="row gutter-1 align-items-center">
+                  <div className="col-md-6">
+                    <h2 className="text-uppercase fs-20">Delivery Address</h2>
                   </div>
                 </div>
 
-                <fieldset class="mb-2">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                <fieldset className="mb-2">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputName2"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Name"
                           required=""
                           value=""
@@ -53,13 +53,13 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputLastName"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="LastName"
                           required=""
                         />
@@ -69,14 +69,14 @@ const Checkout = () => {
                   </div>
                 </fieldset>
 
-                <fieldset class="mb-2">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                <fieldset className="mb-2">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputAddress"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Address"
                           required=""
                           value=""
@@ -85,13 +85,13 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputApt"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Apt, Suite, etc. (optional)"
                           required=""
                         />
@@ -103,14 +103,14 @@ const Checkout = () => {
                   </div>
                 </fieldset>
 
-                <fieldset class="mb-2">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                <fieldset className="mb-2">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputCity"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="City"
                           required=""
                         />
@@ -118,11 +118,11 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="select-frame">
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="select-frame">
                         <select
-                          class="custom-select custom-select-lg"
+                          className="custom-select custom-select-lg"
                           id="customSelect1"
                           data-placeholder="State"
                         >
@@ -133,12 +133,12 @@ const Checkout = () => {
                         </select>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="form-label-group">
+                    <div className="col-6">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputZip"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Zip"
                           required=""
                         />
@@ -146,11 +146,11 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="select-frame">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="select-frame">
                         <select
-                          class="custom-select custom-select-lg"
+                          className="custom-select custom-select-lg"
                           id="customSelect3"
                           data-placeholder="Country"
                         >
@@ -165,14 +165,14 @@ const Checkout = () => {
                 </fieldset>
               </div>
 
-              <div class="bg-white p-2 p-lg-3 mb-1">
-                <h2 class="mb-2 text-uppercase fs-20">Payment</h2>
-                <fieldset class="mb-2">
-                  <div class="row">
-                    <div class="col">
-                      <div class="select-frame">
+              <div className="bg-white p-2 p-lg-3 mb-1">
+                <h2 className="mb-2 text-uppercase fs-20">Payment</h2>
+                <fieldset className="mb-2">
+                  <div className="row">
+                    <div className="col">
+                      <div className="select-frame">
                         <select
-                          class="custom-select custom-select-lg"
+                          className="custom-select custom-select-lg"
                           id="customPayment"
                         >
                           <option value="1">Credit / Debit Card</option>
@@ -183,14 +183,14 @@ const Checkout = () => {
                   </div>
                 </fieldset>
 
-                <fieldset class="mb-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                <fieldset className="mb-3">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputCardNumber"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Card Number"
                           required=""
                         />
@@ -198,25 +198,25 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="form-label-group">
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputExpiryDate"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Expiry Date (MM/YY)"
                           required=""
                         />
                         <label for="inputExpiryDate">Expiry date (MM/YY)</label>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="form-label-group">
+                    <div className="col-6">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputCvv"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="CVV"
                           required=""
                         />
@@ -224,13 +224,13 @@ const Checkout = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-label-group">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-label-group">
                         <input
                           type="text"
                           id="inputCardName"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                           placeholder="Name on card"
                           required=""
                         />
@@ -240,37 +240,37 @@ const Checkout = () => {
                   </div>
                 </fieldset>
 
-                <h3 class="mb-2 text-uppercase fs-16">We Accept</h3>
-                <ul class="list list--horizontal">
+                <h3 className="mb-2 text-uppercase fs-16">We Accept</h3>
+                <ul className="list list--horizontal">
                   <li>
                     <img
                       src="assets/images/demo/visa-1.svg"
-                      class="payment"
+                      className="payment"
                       alt="Image"
                     />
                   </li>
                   <li>
                     <img
                       src="assets/images/demo/master-card-1.svg"
-                      class="payment"
+                      className="payment"
                       alt="Image"
                     />
                   </li>
                   <li>
                     <img
                       src="assets/images/demo/amex-1.svg"
-                      class="payment"
+                      className="payment"
                       alt="Image"
                     />
                   </li>
                 </ul>
               </div>
 
-              <div class="bg-white p-2 p-md-3">
-                <a href="" class="btn btn-lg btn-primary btn-block mb-2">
+              <div className="bg-white p-2 p-md-3">
+                <div className="btn btn-lg btn-primary btn-block mb-2" onClick={handleCheckout}>
                   Place Order
-                </a>
-                <small class="text-muted">
+                </div>
+                <small className="text-muted">
                   By placing your order you agree to our{" "}
                   <a href="">Terms & Conditions</a>, privacy and returns
                   policies. You also consent to some of your data being stored
@@ -280,19 +280,19 @@ const Checkout = () => {
               </div>
             </div>
 
-            <aside class="col-lg-5">
-              <div class="bg-white p-2 p-lg-3">
-                <h2 class="mb-3 text-uppercase fs-20">Order total</h2>
+            <aside className="col-lg-5">
+              <div className="bg-white p-2 p-lg-3">
+                <h2 className="mb-3 text-uppercase fs-20">Order total</h2>
 
                 {cartItems.map((item) => (
-                  <div class="cart-item-body">
+                  <div className="cart-item-body">
                     <div key={item._id} className="cart-item col-12">
                       <div>
                         <img src={item.imgLink} alt="Image" className="img" />
                       </div>
                       <div>
-                        <h5 class="cart-item-title">{item.name}</h5>
-                        <ul class="list fs-14">
+                        <h5 className="cart-item-title">{item.name}</h5>
+                        <ul className="list fs-14">
                           <li>
                             <p>${item.price}</p>
                           </li>
@@ -325,13 +325,13 @@ const Checkout = () => {
                           </li>
                         </ul>
                       </div>
-                      <div class="col-4 text-right">
-                        <ul class="cart-item-options">
+                      <div className="col-4 text-right">
+                        <ul className="cart-item-options">
                           <li>
                             <a
                               type="button"
                               onClick={() => onRemove(item)}
-                              class="icon-x"
+                              className="icon-x"
                             ></a>
                           </li>
                         </ul>
@@ -340,13 +340,13 @@ const Checkout = () => {
                   </div>
                 ))}
 
-                <hr class="my-3" />
-                <ul class="list-group list-group-minimal">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                <hr className="my-3" />
+                <ul className="list-group list-group-minimal">
+                  <li className="list-group-item d-flex justify-content-between align-items-center">
                     Items
                     <span></span>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-bold">
+                  <li className="list-group-item d-flex justify-content-between align-items-center text-uppercase font-weight-bold">
                     Total to pay
                     <span>${totalPrice}</span>
                   </li>

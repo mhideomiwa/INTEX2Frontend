@@ -19,8 +19,29 @@ function TransactionHistory() {
         // Function to fetch orders
         const fetchOrders = async () => {
             try {
-                const response = await fetch('https://intex2-backend.azurewebsites.net/api/Home/GetAllOrders'); // Adjust the endpoint accordingly
-                // console.log('Response:', response)
+                // Get the token from localStorage
+                const token = sessionStorage.getItem('accessToken');
+
+                // Check if token exists
+                if (!token) {
+                    // Handle the case where token is not available
+                    console.error('Token not found in localStorage');
+                    return;
+                }
+
+                const response = await fetch('https://intex2-backend.azurewebsites.net/api/Home/GetAllOrders', {
+                    headers: {
+                        'Authorization': `Bearer ${token}` // Include the token in the Authorization header
+                    }
+                });
+
+                if (!response.ok) {
+                    // Handle the case where the server returns an error response
+                    console.error('Error response:', response.status);
+                    setLoading(false);
+                    return;
+                }
+
                 const data = await response.json();
                 setOrders(data);
                 setTotalPages(Math.ceil(data.length / rowsPerPage));
@@ -30,6 +51,7 @@ function TransactionHistory() {
                 setLoading(false);
             }
         };
+
 
         fetchOrders(); // Call the fetchOrders function when the component mounts
     }, []); // Empty dependency array ensures this effect runs only once

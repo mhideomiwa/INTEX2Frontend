@@ -20,6 +20,7 @@ function Login() {
                 if (!response.ok) {
                     throw new Error(response.status);
                 }
+                sessionStorage.setItem("email", user.email);
                 return response.json();
             })
             .then((data) => {
@@ -28,12 +29,12 @@ function Login() {
                     const { accessToken, refreshToken, expiresIn } = data;
 
                     // Store the tokens and expiration time in localStorage
-                    localStorage.setItem("accessToken", accessToken);
-                    localStorage.setItem("refreshToken", refreshToken);
-                    localStorage.setItem("expiresAt", Date.now() + expiresIn * 1000);
+                    sessionStorage.setItem("accessToken", accessToken);
+                    sessionStorage.setItem("refreshToken", refreshToken);
+                    sessionStorage.setItem("expiresAt", Date.now() + expiresIn * 1000);
 
                     // Redirect to the desired page after successful login
-                    //   window.location.href = "/index";
+                      window.location.href = "/";
                 } else {
                     console.log("Invalid response data format");
                 }

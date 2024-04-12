@@ -33,7 +33,7 @@ function Admin({products, orders, users}) {
                     <div className="row gutter-1 gutter-md-2">
                         <div className="col-lg-4">
                             <aside className="bg-white p-2 p-md-3">
-                                <h3 className="fs-20 text-uppercase text-muted mb-2">Welcome, John Doe!</h3>
+                                <h3 className="fs-20 text-uppercase text-muted mb-2">Welcome, {sessionStorage.getItem('email')}!</h3>
                                 <div className="nav nav-menu flex-column lavalamp" id="sidebar-1" role="tablist">
                                     <a className={`sub-nav-link ${activeTab === 'sidebar-1-1' ? 'active' : ''}`} data-toggle="tab"
                                        href="#sidebar-1-1" role="tab" aria-controls="sidebar-1-1"
@@ -89,30 +89,6 @@ function Admin({products, orders, users}) {
 }
 
 
-// export async function getServerSideProps() {
-//     // console.log('API_URI:', process.env.API_URI)
-//     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-//     const productRes = await fetch(process.env.API_URI + "/api/Home/GetAllProducts");
-//     const orderRes = await fetch(process.env.API_URI + "/api/Home/GetAllOrders");
-//     const userRes = await fetch(process.env.API_URI + "/api/Home/GetAllCustomers");
-//
-//
-//     const allProducts = await productRes.json();
-//     const allOrders = await orderRes.json();
-//     const allUsers = await userRes.json();
-//
-//     console.log('All Users:', allUsers.slice(0,25))
-//
-//     // console.log('All Products:', allProducts)
-//     return {
-//         props: {
-//             products: allProducts,
-//             orders: allOrders,
-//             users: allUsers,
-//
-//         },
-//     }
-// }
-
-
 export default Admin;
+
+

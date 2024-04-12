@@ -18,7 +18,21 @@ function ViewUsers() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllCustomers"); // Adjust the endpoint accordingly
+                // Get the token from localStorage
+                const token = sessionStorage.getItem('accessToken');
+
+                // Check if token exists
+                if (!token) {
+                    // Handle the case where token is not available
+                    console.error('Token not found in localStorage');
+                    return;
+                }
+
+                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllCustomers", {
+                    headers: {
+                        'Authorization': `Bearer ${token}` // Include the token in the Authorization header
+                    }
+                });
                 const data = await response.json();
                 setUsers(data);
                 setTotalPages(Math.ceil(data.length / rowsPerPage));
@@ -31,6 +45,7 @@ function ViewUsers() {
 
         fetchUsers();
     }, []);
+
 
     // Calculate the index range of users to display based on current page
     const indexOfLastUser = currentPage * rowsPerPage;
