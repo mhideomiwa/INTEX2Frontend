@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { TransactionHistory, ViewProducts, AddProducts, FileUpload, ViewUsers } from "../../components";
 
-function Admin({products, orders, users}) {
+function Admin({ products, orders, users }) {
     const [activeTab, setActiveTab] = useState('sidebar-1-1'); // State to track the active tab
     const [userEmail, setUserEmail] = useState(null); // State to store user's email
 
@@ -11,9 +11,7 @@ function Admin({products, orders, users}) {
         if (email) {
             setUserEmail(email);
         }
-    }, []);
 
-    useEffect(() => {
         // Function to handle tab switching
         const handleTabClick = (e) => {
             e.preventDefault(); // Prevent default anchor behavior
@@ -44,7 +42,9 @@ function Admin({products, orders, users}) {
                             <aside className="bg-white p-2 p-md-3">
                                 {userEmail && ( // Conditionally render if userEmail is available
                                     <>
-                                        <h3 className="fs-20 text-uppercase text-muted mb-2">Welcome, {sessionStorage.getItem('email')}!</h3>
+                                        <h3 className="fs-20 text-uppercase text-muted mb-2">Welcome, {userEmail}!</h3>
+                                        </>
+                                        )}
                                         <div className="nav nav-menu flex-column lavalamp" id="sidebar-1" role="tablist">
                                             <a className={`sub-nav-link ${activeTab === 'sidebar-1-1' ? 'active' : ''}`} data-toggle="tab"
                                                href="#sidebar-1-1" role="tab" aria-controls="sidebar-1-1"
@@ -69,8 +69,6 @@ function Admin({products, orders, users}) {
                                                 <i className="fs-24 icon-users"></i> View Users
                                             </a>
                                         </div>
-                                </>
-                                )}
                             </aside>
                         </div>
                         <div className="col-lg-8">
@@ -85,8 +83,7 @@ function Admin({products, orders, users}) {
                                     </div>
 
                                     <div className={`tab-pane fade ${activeTab === 'sidebar-1-3' ? 'show active' : ''}`} id="sidebar-1-3" role="tabpanel" aria-labelledby="sidebar-1-3">
-                                        <FileUpload />
-                                        <AddProducts/>
+                                        <AddProducts />
                                     </div>
                                     <div className={`tab-pane fade ${activeTab === 'sidebar-1-4' ? 'show active' : ''}`} id="sidebar-1-4" role="tabpanel" aria-labelledby="sidebar-1-4">
                                         <ViewUsers users={users} />
@@ -101,7 +98,4 @@ function Admin({products, orders, users}) {
     );
 }
 
-
 export default Admin;
-
-
