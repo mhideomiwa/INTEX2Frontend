@@ -3,8 +3,21 @@ import EditProductModal from './editProductModal';
 
 
 function deleteProduct(product) {
+    // Get the token from localStorage
+    const token = localStorage.getItem('accessToken');
+
+    // Check if token exists
+    if (!token) {
+        // Handle the case where token is not available
+        console.error('Token not found in localStorage');
+        return;
+    }
+
     fetch(`https://intex2-backend.azurewebsites.net/api/Home/DeleteProduct/`, {
         method: 'DELETE',
+        headers: {
+            'Authorization': `Bearer ${token}` // Include the token in the Authorization header
+        },
         body: JSON.stringify(
             product.productId
         ),
@@ -47,8 +60,21 @@ const ViewProducts = () => {
     });
 
     function editProduct(product) {
+        // Get the token from localStorage
+        const token = localStorage.getItem('accessToken');
+
+        // Check if token exists
+        if (!token) {
+            // Handle the case where token is not available
+            console.error('Token not found in localStorage');
+            return;
+        }
+
         fetch(`https://intex2-backend.azurewebsites.net/api/Home/EditProduct/`, {
             method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${token}` // Include the token in the Authorization header
+            },
             body: JSON.stringify(product),
         })
             .then(response => response.json())
@@ -100,7 +126,21 @@ const ViewProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllProducts"); // Adjust the endpoint accordingly
+                // Get the token from localStorage
+                const token = localStorage.getItem('accessToken');
+
+                // Check if token exists
+                if (!token) {
+                    // Handle the case where token is not available
+                    console.error('Token not found in localStorage');
+                    return;
+                }
+
+                const response = await fetch("https://intex2-backend.azurewebsites.net/api/Home/GetAllProducts", {
+                    headers: {
+                        'Authorization': `Bearer ${token}` // Include the token in the Authorization header
+                    }
+                });
                 const data = await response.json();
                 setProducts(data);
                 setLoading(false);
@@ -112,6 +152,7 @@ const ViewProducts = () => {
 
         fetchProducts();
     }, []);
+
 
     if (loading) {
         return <div>Loading...</div>;
@@ -143,7 +184,7 @@ const ViewProducts = () => {
                             <div className="modal-content border-danger">
                                 <div className="modal-header">
                                     <h5 className="modal-title" id={`${modalId}_label`}>Delete Product</h5>
-                                    <button type="button" className="close" onClick={handleCloseModal} aria-label="Close">
+                                    <button type="button" className="close" onClick={handleCloseDeleteModal} aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
