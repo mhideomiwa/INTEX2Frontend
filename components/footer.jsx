@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 function Footer(props) {
     return (
@@ -12,7 +13,7 @@ function Footer(props) {
                         <div className="col-md-4 text-md-right text-muted">
                             <ul className="list list--horizontal list--separated">
                                 <li>
-                                    <a className="small underline" href="/privacy">Privacy Policy</a>
+                                    <Link className="small underline" href="/privacy">Privacy Policy</Link>
                                 </li>
                             </ul>
                         </div>
