@@ -8666,7 +8666,11 @@ a.text-transparent:hover, a.text-transparent:focus {
     color: #f26522 !important; }
 
 .gutter-1 {
-  margin: -5px; }
+  display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: thin;  }
   .gutter-1 > * {
     margin-bottom: 0 !important;
     padding: 5px; }
@@ -10640,6 +10644,8 @@ dt {
 
 .card-image {
   position: relative;
+  height: 800px; 
+  width: 800px; 
   flex-shrink: 0; }
   .card-image a {
     display: block; }
@@ -10680,6 +10686,14 @@ dt {
   padding: 1.875rem;
   background: none;
   z-index: 100; }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;  
+  align-items: flex-start;  
+}
+
 
 .card-tile .card-header {
   top: 0; }
@@ -10728,7 +10742,6 @@ dt {
     left: 0;
     opacity: 0; }
   .card-product .card-image .badge {
-    position: absolute;
     bottom: 0.625rem;
     left: 0.625rem; }
   .card-product .card-title {
@@ -12499,9 +12512,6 @@ img {
     .owl-carousel .owl-nav button.owl-prev:focus,
     .owl-carousel .owl-nav button.owl-next:focus {
       outline: none; }
-    .owl-carousel .owl-nav button.owl-prev span,
-    .owl-carousel .owl-nav button.owl-next span {
-      display: none; }
     .owl-carousel .owl-nav button.owl-prev[class*="disabled"],
     .owl-carousel .owl-nav button.owl-next[class*="disabled"] {
       opacity: 0; }
@@ -12656,12 +12666,7 @@ img {
     font-family: 'icomoon';
     font-size: 1.875rem;
     color: #000; }
-  .owl-external-nav button.owl-prev:focus,
-  .owl-external-nav button.owl-next:focus {
-    outline: none; }
-  .owl-external-nav button.owl-prev span,
-  .owl-external-nav button.owl-next span {
-    display: none; }
+    
   .owl-external-nav button.owl-prev[class*="disabled"],
   .owl-external-nav button.owl-next[class*="disabled"] {
     opacity: 0; }
